@@ -1,0 +1,8 @@
+import { TSubscriptionTemplateType } from '@localzet/aura-backend-contract'
+
+export interface Props {
+    encodedTemplateYaml: null | string | undefined
+    language: 'json' | 'yaml'
+    templateJson: null | string | undefined
+    templateType: TSubscriptionTemplateType
+}
