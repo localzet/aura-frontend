@@ -4,7 +4,7 @@ import {
     GetOneNodeCommand,
     GetPubKeyCommand,
     UpdateNodeCommand
-} from '@localzet/aura-backend-contract'
+} from '@localzet/aura-contract'
 import { UseFormReturnType } from '@mantine/form'
 
 export interface IProps<T extends CreateNodeCommand.Request | UpdateNodeCommand.Request> {

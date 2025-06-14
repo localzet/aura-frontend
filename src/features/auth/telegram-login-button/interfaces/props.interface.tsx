@@ -1,4 +1,4 @@
-import { GetStatusCommand } from '@localzet/aura-backend-contract'
+import { GetStatusCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     tgAuth: GetStatusCommand.Response['response']['tgAuth']

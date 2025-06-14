@@ -1,4 +1,4 @@
-import { LoginCommand, RegisterCommand, TelegramCallbackCommand } from '@localzet/aura-backend-contract'
+import { LoginCommand, RegisterCommand, TelegramCallbackCommand } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 
 import { setToken } from '@entities/auth/session-store'

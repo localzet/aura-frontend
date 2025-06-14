@@ -1,4 +1,4 @@
-import { CreateApiTokenCommand, DeleteApiTokenCommand } from '@localzet/aura-backend-contract'
+import { CreateApiTokenCommand, DeleteApiTokenCommand } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 
 import { createMutationHook } from '@shared/api/tsq-helpers/create-mutation-hook'

@@ -1,4 +1,4 @@
-import { GetAllNodesCommand } from '@localzet/aura-backend-contract'
+import { GetAllNodesCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     index: number

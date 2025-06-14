@@ -5,7 +5,7 @@ import {
     PiChartDonutDuotone,
     PiChartPieSliceDuotone
 } from 'react-icons/pi'
-import { GetBandwidthStatsCommand } from '@localzet/aura-backend-contract'
+import { GetBandwidthStatsCommand } from '@localzet/aura-contract'
 import { TFunction } from 'i18next'
 
 export const getBandwidthMetrics = (

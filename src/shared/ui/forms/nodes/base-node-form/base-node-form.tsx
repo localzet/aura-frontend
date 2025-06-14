@@ -15,7 +15,7 @@ import {
     Text,
     TextInput
 } from '@mantine/core'
-import { CreateNodeCommand, UpdateNodeCommand } from '@localzet/aura-backend-contract'
+import { CreateNodeCommand, UpdateNodeCommand } from '@localzet/aura-contract'
 import { PiCheckDuotone, PiFloppyDiskDuotone, PiXDuotone } from 'react-icons/pi'
 import { useTranslation } from 'react-i18next'
 import { useMemo } from 'react'

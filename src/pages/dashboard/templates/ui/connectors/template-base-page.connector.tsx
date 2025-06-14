@@ -1,4 +1,4 @@
-import { TSubscriptionTemplateType } from '@localzet/aura-backend-contract'
+import { TSubscriptionTemplateType } from '@localzet/aura-contract'
 
 import { useGetSubscriptionTemplate } from '@shared/api/hooks'
 import { LoadingScreen } from '@shared/ui'

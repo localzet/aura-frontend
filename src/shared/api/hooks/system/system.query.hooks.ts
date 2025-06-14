@@ -2,7 +2,7 @@ import {
     GetBandwidthStatsCommand,
     GetNodesStatisticsCommand,
     GetStatsCommand
-} from '@localzet/aura-backend-contract'
+} from '@localzet/aura-contract'
 import { createQueryKeys } from '@lukemorales/query-key-factory'
 import { keepPreviousData } from '@tanstack/react-query'
 import { notifications } from '@mantine/notifications'

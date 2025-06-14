@@ -1,4 +1,4 @@
-import { RESET_PERIODS } from '@localzet/aura-backend-contract'
+import { RESET_PERIODS } from '@localzet/aura-contract'
 import { Box, Group, Progress, Text } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 

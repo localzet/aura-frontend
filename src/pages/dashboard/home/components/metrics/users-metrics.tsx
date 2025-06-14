@@ -5,7 +5,7 @@ import {
     PiPulseDuotone,
     PiUsersDuotone
 } from 'react-icons/pi'
-import { GetStatsCommand } from '@localzet/aura-backend-contract'
+import { GetStatsCommand } from '@localzet/aura-contract'
 import { TFunction } from 'i18next'
 
 import { formatInt } from '@shared/utils/misc'

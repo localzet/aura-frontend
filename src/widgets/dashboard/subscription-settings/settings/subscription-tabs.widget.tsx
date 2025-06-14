@@ -29,7 +29,7 @@ import {
     PiProhibit,
     PiUserCircle
 } from 'react-icons/pi'
-import { UpdateSubscriptionSettingsCommand } from '@localzet/aura-backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@localzet/aura-contract'
 import { TbPrescription } from 'react-icons/tb'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'

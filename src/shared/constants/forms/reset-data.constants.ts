@@ -1,4 +1,4 @@
-import { RESET_PERIODS } from '@localzet/aura-backend-contract'
+import { RESET_PERIODS } from '@localzet/aura-contract'
 import { TFunction } from 'i18next'
 
 export const resetDataStrategy = (t: TFunction) => [

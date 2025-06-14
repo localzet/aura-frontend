@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetStatusCommand } from '@localzet/aura-backend-contract'
+import { GetStatusCommand } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 
 import { createGetQueryHook } from '../../tsq-helpers'

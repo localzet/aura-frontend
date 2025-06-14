@@ -1,4 +1,4 @@
-import { USERS_STATUS } from '@localzet/aura-backend-contract'
+import { USERS_STATUS } from '@localzet/aura-contract'
 
 export const userStatusValues = [
     { value: USERS_STATUS.ACTIVE, label: 'Active' },

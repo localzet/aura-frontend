@@ -1,5 +1,5 @@
 import { PiCellSignalFullDuotone, PiCellSignalSlashDuotone, PiTrashDuotone } from 'react-icons/pi'
-import { USERS_STATUS } from '@localzet/aura-backend-contract'
+import { USERS_STATUS } from '@localzet/aura-contract'
 import { ActionIcon, Tooltip } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 

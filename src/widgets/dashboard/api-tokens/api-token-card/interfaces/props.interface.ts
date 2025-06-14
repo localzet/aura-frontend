@@ -1,4 +1,4 @@
-import { FindAllApiTokensCommand } from '@localzet/aura-backend-contract'
+import { FindAllApiTokensCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     apiToken: FindAllApiTokensCommand.Response['response']['apiKeys'][number]

@@ -1,4 +1,4 @@
-import { UpdateNodeCommand } from '@localzet/aura-backend-contract'
+import { UpdateNodeCommand } from '@localzet/aura-contract'
 
 export interface IEditModal {
     isLoading: boolean

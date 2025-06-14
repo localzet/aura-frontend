@@ -1,4 +1,4 @@
-import { TSubscriptionTemplateType } from '@localzet/aura-backend-contract'
+import { TSubscriptionTemplateType } from '@localzet/aura-contract'
 import { useTranslation } from 'react-i18next'
 
 import { SubscriptionTemplateEditorWidget } from '@widgets/dashboard/templates/subscription-template-editor'

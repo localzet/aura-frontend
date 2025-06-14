@@ -6,7 +6,7 @@ import {
     ReorderNodeCommand,
     RestartAllNodesCommand,
     UpdateNodeCommand
-} from '@localzet/aura-backend-contract'
+} from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 
 import { createMutationHook } from '../../tsq-helpers'

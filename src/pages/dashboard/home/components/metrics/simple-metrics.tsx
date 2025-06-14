@@ -1,5 +1,5 @@
 import { PiChartBarDuotone, PiClockDuotone, PiMemoryDuotone } from 'react-icons/pi'
-import { GetStatsCommand } from '@localzet/aura-backend-contract'
+import { GetStatsCommand } from '@localzet/aura-contract'
 import { TFunction } from 'i18next'
 import dayjs from 'dayjs'
 

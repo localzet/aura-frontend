@@ -1,4 +1,4 @@
-import { CreateHostCommand, SECURITY_LAYERS } from '@localzet/aura-backend-contract'
+import { CreateHostCommand, SECURITY_LAYERS } from '@localzet/aura-contract'
 import { useForm, zodResolver } from '@mantine/form'
 import { useTranslation } from 'react-i18next'
 import { Modal, Text } from '@mantine/core'

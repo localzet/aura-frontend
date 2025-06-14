@@ -1,3 +1,3 @@
-import { GetAllUsersCommand } from '@localzet/aura-backend-contract'
+import { GetAllUsersCommand } from '@localzet/aura-contract'
 
 export type User = GetAllUsersCommand.Response['response']['users'][number]

@@ -1,4 +1,4 @@
-import { BulkDeleteUsersByStatusCommand, TUsersStatus } from '@localzet/aura-backend-contract'
+import { BulkDeleteUsersByStatusCommand, TUsersStatus } from '@localzet/aura-contract'
 import { TbCheck as IconCheck, TbX as IconX } from 'react-icons/tb'
 import { Button, Group, Select, Stack, Text } from '@mantine/core'
 import { notifications } from '@mantine/notifications'

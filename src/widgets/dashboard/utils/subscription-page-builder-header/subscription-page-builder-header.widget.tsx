@@ -65,7 +65,7 @@ export function SubscriptionPageBuilderHeaderWidget(props: {
                             </Text>
                             <Button
                                 component="a"
-                                href="https://remna.st/docs/install/remnawave-subscription-page#configuring-subscription-page-optional"
+                                href="https://aura.zorin.space/docs/install/aura-subscriptions#configuring-subscription-page-optional"
                                 mt={'xs'}
                                 target="_blank"
                             >

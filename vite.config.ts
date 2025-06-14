@@ -49,7 +49,7 @@ export default defineConfig({
                         '@mantine/notifications',
                         '@mantine/modals'
                     ],
-                    aura: ['@localzet/aura-backend-contract'],
+                    aura: ['@localzet/aura-contract'],
                     buffer: ['buffer'],
                     consola: ['consola'],
                     i18n: ['i18next', 'i18next-http-backend', 'i18next-browser-languagedetector'],

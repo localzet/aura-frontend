@@ -1,4 +1,4 @@
-import { GetOneNodeCommand } from '@localzet/aura-backend-contract'
+import { GetOneNodeCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     handleClose: () => void

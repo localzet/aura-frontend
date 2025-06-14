@@ -1,5 +1,5 @@
 import { Badge, CopyButton, Group, Popover, Text } from '@mantine/core'
-import { TEMPLATE_KEYS } from '@localzet/aura-backend-contract'
+import { TEMPLATE_KEYS } from '@localzet/aura-contract'
 import { PiCheck, PiCopy, PiInfo } from 'react-icons/pi'
 import { useTranslation } from 'react-i18next'
 

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { GetAllUsersCommand } from '@localzet/aura-backend-contract'
+import { GetAllUsersCommand } from '@localzet/aura-contract'
 import { MRT_ColumnDef } from 'mantine-react-table'
 import { useTranslation } from 'react-i18next'
 import { Badge } from '@mantine/core'

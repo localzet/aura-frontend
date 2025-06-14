@@ -17,7 +17,7 @@ import {
     PiTelegramLogoDuotone,
     PiX
 } from 'react-icons/pi'
-import { BulkAllUpdateUsersCommand } from '@localzet/aura-backend-contract'
+import { BulkAllUpdateUsersCommand } from '@localzet/aura-contract'
 import { useForm, zodResolver } from '@mantine/form'
 import { DateTimePicker } from '@mantine/dates'
 import { useTranslation } from 'react-i18next'

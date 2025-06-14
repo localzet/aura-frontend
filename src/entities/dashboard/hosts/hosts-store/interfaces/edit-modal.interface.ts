@@ -1,4 +1,4 @@
-import { UpdateHostCommand } from '@localzet/aura-backend-contract'
+import { UpdateHostCommand } from '@localzet/aura-contract'
 
 export interface IEditModal {
     host: null | UpdateHostCommand.Response['response']

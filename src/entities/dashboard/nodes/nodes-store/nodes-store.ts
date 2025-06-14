@@ -1,4 +1,4 @@
-import { UpdateNodeCommand } from '@localzet/aura-backend-contract'
+import { UpdateNodeCommand } from '@localzet/aura-contract'
 import { devtools } from 'zustand/middleware'
 
 import { create } from '@shared/hocs/store-wrapper'

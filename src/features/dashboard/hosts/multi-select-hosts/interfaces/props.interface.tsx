@@ -1,4 +1,4 @@
-import { GetAllHostsCommand, GetInboundsCommand } from '@localzet/aura-backend-contract'
+import { GetAllHostsCommand, GetInboundsCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     hosts: GetAllHostsCommand.Response['response'] | undefined

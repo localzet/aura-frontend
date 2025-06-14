@@ -31,7 +31,7 @@ import {
     PiQrCodeDuotone,
     PiTelegramLogoDuotone
 } from 'react-icons/pi'
-import { UpdateUserCommand } from '@localzet/aura-backend-contract'
+import { UpdateUserCommand } from '@localzet/aura-contract'
 import { zodResolver } from 'mantine-form-zod-resolver'
 import { notifications } from '@mantine/notifications'
 import { DateTimePicker } from '@mantine/dates'
@@ -351,7 +351,7 @@ export const ViewUserModal = () => {
                                                 )}{' '}
                                                 <Code>true</Code>.{' '}
                                                 <Anchor
-                                                    href="https://remna.st/docs/features/hwid-device-limit"
+                                                    href="https://aura.zorin.space/docs/features/hwid-device-limit"
                                                     target="_blank"
                                                 >
                                                     {t(

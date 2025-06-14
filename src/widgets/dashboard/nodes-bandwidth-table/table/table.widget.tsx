@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import { MantineReactTable, MRT_SortingState, useMantineReactTable } from 'mantine-react-table'
-import { GetAllNodesCommand } from '@localzet/aura-backend-contract'
+import { GetAllNodesCommand } from '@localzet/aura-contract'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import dayjs from 'dayjs'

@@ -9,7 +9,7 @@ import {
     Title
 } from '@mantine/core'
 import { PiShuffleDuotone, PiSignpostDuotone } from 'react-icons/pi'
-import { RegisterCommand } from '@localzet/aura-backend-contract'
+import { RegisterCommand } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 import { useForm, zodResolver } from '@mantine/form'
 import { generate } from 'generate-password-ts'

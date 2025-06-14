@@ -22,7 +22,7 @@ import {
     PiTelegramLogoDuotone,
     PiUserDuotone
 } from 'react-icons/pi'
-import { CreateUserCommand, USERS_STATUS } from '@localzet/aura-backend-contract'
+import { CreateUserCommand, USERS_STATUS } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 import { useForm, zodResolver } from '@mantine/form'
 import { DateTimePicker } from '@mantine/dates'
@@ -189,7 +189,7 @@ export const CreateUserModalWidget = () => {
                                                 )}{' '}
                                                 <Code>true</Code>.{' '}
                                                 <Anchor
-                                                    href="https://remna.st/docs/features/hwid-device-limit"
+                                                    href="https://aura.zorin.space/docs/features/hwid-device-limit"
                                                     target="_blank"
                                                 >
                                                     {t(

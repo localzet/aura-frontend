@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { GetAllUsersCommand } from '@localzet/aura-backend-contract'
+import { GetAllUsersCommand } from '@localzet/aura-contract'
 import { MRT_TableInstance } from 'mantine-react-table'
 
 export interface IProps {

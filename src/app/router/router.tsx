@@ -5,7 +5,7 @@ import {
     Route,
     RouterProvider
 } from 'react-router-dom'
-import { SUBSCRIPTION_TEMPLATE_TYPE } from '@localzet/aura-backend-contract'
+import { SUBSCRIPTION_TEMPLATE_TYPE } from '@localzet/aura-contract'
 
 import { SubscriptionPageBuilderConnector } from '@pages/dashboard/utils/subscription-page-builder/ui/connectors/subscription-page-builder.page.connector'
 import { HappRoutingBuilderPageConnector } from '@pages/dashboard/utils/happ-routing-builder/ui/connectors/happ-routing-builder.page.connector'

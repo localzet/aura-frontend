@@ -26,7 +26,7 @@ import {
     TbChevronRight,
     TbRefresh
 } from 'react-icons/tb'
-import { GetNodeUserUsageByRangeCommand } from '@localzet/aura-backend-contract'
+import { GetNodeUserUsageByRangeCommand } from '@localzet/aura-contract'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { PiEmpty, PiListBullets } from 'react-icons/pi'
 import { BarChart, Sparkline } from '@mantine/charts'

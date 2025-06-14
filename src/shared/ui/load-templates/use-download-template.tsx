@@ -1,4 +1,4 @@
-import { TSubscriptionTemplateType } from '@localzet/aura-backend-contract'
+import { TSubscriptionTemplateType } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
 import { useTranslation } from 'react-i18next'
 import { modals } from '@mantine/modals'

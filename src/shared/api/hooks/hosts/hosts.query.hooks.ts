@@ -1,4 +1,4 @@
-import { GetAllHostsCommand } from '@localzet/aura-backend-contract'
+import { GetAllHostsCommand } from '@localzet/aura-contract'
 import { createQueryKeys } from '@lukemorales/query-key-factory'
 import { notifications } from '@mantine/notifications'
 

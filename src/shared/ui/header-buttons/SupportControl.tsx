@@ -8,7 +8,7 @@ export function SupportControl() {
         <HeaderControl
             className={classes.support}
             component="a"
-            href="https://remna.st/docs/donate"
+            href="https://aura.zorin.space/docs/donate"
             rel="noopener noreferrer"
             target="_blank"
         >

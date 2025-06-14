@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { SUBSCRIPTION_TEMPLATE_TYPE } from '@localzet/aura-backend-contract'
+import { SUBSCRIPTION_TEMPLATE_TYPE } from '@localzet/aura-contract'
 import Editor, { Monaco } from '@monaco-editor/react'
 import { Box, Divider, Paper } from '@mantine/core'
 import 'monaco-yaml/yaml.worker.js'

@@ -4,7 +4,7 @@ import {
     PiProhibitDuotone,
     PiPulseDuotone
 } from 'react-icons/pi'
-import { USERS_STATUS } from '@localzet/aura-backend-contract'
+import { USERS_STATUS } from '@localzet/aura-contract'
 import { Badge } from '@mantine/core'
 
 import { UserStatusBadgeProps } from './interfaces'

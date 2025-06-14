@@ -1,5 +1,5 @@
 import { Button, Group, Stack, Textarea, TextInput } from '@mantine/core'
-import { CreateApiTokenCommand } from '@localzet/aura-backend-contract'
+import { CreateApiTokenCommand } from '@localzet/aura-contract'
 import { PiFloppyDiskDuotone } from 'react-icons/pi'
 import { useTranslation } from 'react-i18next'
 

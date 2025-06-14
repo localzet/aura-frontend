@@ -1,4 +1,4 @@
-import { UpdateSubscriptionSettingsCommand } from '@localzet/aura-backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@localzet/aura-contract'
 import { useCallback, useEffect, useState } from 'react'
 import { notifications } from '@mantine/notifications'
 import { useForm, zodResolver } from '@mantine/form'

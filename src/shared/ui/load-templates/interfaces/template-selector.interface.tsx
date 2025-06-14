@@ -1,4 +1,4 @@
-import { TSubscriptionTemplateType } from '@localzet/aura-backend-contract'
+import { TSubscriptionTemplateType } from '@localzet/aura-contract'
 
 import {
     IDownloadableSubscriptionTemplate,

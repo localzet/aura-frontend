@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { GetAllNodesCommand } from '@localzet/aura-backend-contract'
+import { GetAllNodesCommand } from '@localzet/aura-contract'
 import { Group, Progress, Text } from '@mantine/core'
 import { MRT_ColumnDef } from 'mantine-react-table'
 import { useTranslation } from 'react-i18next'

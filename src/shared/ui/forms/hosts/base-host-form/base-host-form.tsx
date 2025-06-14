@@ -28,7 +28,7 @@ import {
     FINGERPRINTS,
     SECURITY_LAYERS,
     UpdateHostCommand
-} from '@localzet/aura-backend-contract'
+} from '@localzet/aura-contract'
 import { useDisclosure } from '@mantine/hooks'
 import { useTranslation } from 'react-i18next'
 

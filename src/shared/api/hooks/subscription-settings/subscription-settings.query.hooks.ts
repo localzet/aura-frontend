@@ -1,4 +1,4 @@
-import { GetSubscriptionSettingsCommand } from '@localzet/aura-backend-contract'
+import { GetSubscriptionSettingsCommand } from '@localzet/aura-contract'
 import { createQueryKeys } from '@lukemorales/query-key-factory'
 import { notifications } from '@mantine/notifications'
 

@@ -1,5 +1,5 @@
 import { Button, Container, Paper, PasswordInput, TextInput } from '@mantine/core'
-import { LoginCommand } from '@localzet/aura-backend-contract'
+import { LoginCommand } from '@localzet/aura-contract'
 import { useForm, zodResolver } from '@mantine/form'
 import { PiSignInDuotone } from 'react-icons/pi'
 import { useTranslation } from 'react-i18next'

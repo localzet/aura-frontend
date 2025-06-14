@@ -1,4 +1,4 @@
-import { UpdateNodeCommand } from '@localzet/aura-backend-contract'
+import { UpdateNodeCommand } from '@localzet/aura-contract'
 import { zodResolver } from 'mantine-form-zod-resolver'
 import { Group, Modal, Text } from '@mantine/core'
 import { useTranslation } from 'react-i18next'

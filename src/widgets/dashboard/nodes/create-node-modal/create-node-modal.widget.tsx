@@ -1,4 +1,4 @@
-import { CreateNodeCommand } from '@localzet/aura-backend-contract'
+import { CreateNodeCommand } from '@localzet/aura-contract'
 import { useForm, zodResolver } from '@mantine/form'
 import { Group, Modal, Text } from '@mantine/core'
 import { useTranslation } from 'react-i18next'

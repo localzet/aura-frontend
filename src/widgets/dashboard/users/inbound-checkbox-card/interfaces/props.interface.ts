@@ -1,4 +1,4 @@
-import { GetInboundsCommand } from '@localzet/aura-backend-contract'
+import { GetInboundsCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     inbound: GetInboundsCommand.Response['response'][number]

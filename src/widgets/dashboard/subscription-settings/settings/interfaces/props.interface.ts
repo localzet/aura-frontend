@@ -1,4 +1,4 @@
-import { GetSubscriptionSettingsCommand } from '@localzet/aura-backend-contract'
+import { GetSubscriptionSettingsCommand } from '@localzet/aura-contract'
 
 export interface IProps {
     subscriptionSettings: GetSubscriptionSettingsCommand.Response['response']

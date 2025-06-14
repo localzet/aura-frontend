@@ -1,4 +1,4 @@
-import { UpdateHostCommand } from '@localzet/aura-backend-contract'
+import { UpdateHostCommand } from '@localzet/aura-contract'
 import { useForm, zodResolver } from '@mantine/form'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
