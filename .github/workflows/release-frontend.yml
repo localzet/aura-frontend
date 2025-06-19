@@ -30,6 +30,12 @@ jobs:
     steps:
       - name: 🔧 Checkout source code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔧 NewTag
+        id: tag
+        uses: JinoArch/get-latest-tag@latest
 
       - name: 🔧 Setup Node
         uses: actions/setup-node@v4
