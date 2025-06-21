@@ -2,44 +2,44 @@ import { UndefinedInitialDataOptions } from '@tanstack/react-query'
 import { z } from 'zod'
 
 /**
- * Arguments for creating a GET query hook with Zod validation
- * @template ResponseSchema - Zod schema for validating response data
- * @template RequestQuerySchema - Zod schema for validating query parameters
- * @template RouteParamsSchema - Zod schema for validating route parameters
+ * Аргументы для создания GET-хука с валидацией через Zod
+ * @template ResponseSchema - Zod-схема для валидации данных ответа
+ * @template RequestQuerySchema - Zod-схема для валидации query-параметров
+ * @template RouteParamsSchema - Zod-схема для валидации параметров маршрута
  */
 export interface CreateGetQueryHookArgs<
     ResponseSchema extends z.ZodType,
     RequestQuerySchema extends z.ZodType,
     RouteParamsSchema extends z.ZodType
 > {
-    /** API endpoint URL, can include route parameters (e.g. /api/users/:id) */
+    /** URL API-эндпоинта, может содержать параметры маршрута (например, /api/users/:id) */
     endpoint: string
 
-    /** Custom error handler function */
+    /** Пользовательская функция обработки ошибок */
     errorHandler?: (error: unknown) => void
 
-    /** Query parameters to include in request URL */
+    /** Query-параметры, включаемые в URL запроса */
     queryParams?: z.infer<RequestQuerySchema>
 
-    /** Schema for validating query parameters */
+    /** Схема для валидации query-параметров */
     requestQuerySchema?: RequestQuerySchema
 
-    /** Schema for validating and parsing API response */
+    /** Схема для валидации и парсинга ответа от API */
     responseSchema: ResponseSchema
 
-    /** Route parameters to substitute in endpoint URL */
+    /** Параметры маршрута для подстановки в URL */
     routeParams?: z.infer<RouteParamsSchema>
 
-    /** Schema for validating route parameters */
+    /** Схема для валидации параметров маршрута */
     routeParamsSchema?: RouteParamsSchema
 
     /**
-     * React Query options configuration
-     * @param queryKey - Unique key for identifying this query
-     * @param staleTime - Time in ms after which data is considered stale
-     * @param refetchInterval - Time in ms between automatic background refetches
-     * @param enabled - Whether this query should automatically run
-     * And other React Query options excluding queryFn and queryKey
+     * Конфигурация опций React Query
+     * @param queryKey - Уникальный ключ для идентификации запроса
+     * @param staleTime - Время в мс, после которого данные считаются устаревшими
+     * @param refetchInterval - Интервал в мс между автоматическими фоновыми обновлениями
+     * @param enabled - Нужно ли автоматически запускать этот запрос
+     * И другие опции React Query, кроме queryFn и queryKey
      */
     rQueryParams: Omit<UndefinedInitialDataOptions, 'queryFn' | 'queryKey'>
 }

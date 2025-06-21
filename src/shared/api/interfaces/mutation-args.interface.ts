@@ -10,31 +10,31 @@ export interface CreateMutationHookArgs<
     BodySchema extends z.ZodType,
     ResponseSchema extends z.ZodType
 > {
-    /** The endpoint for the POST request */
+    /** Эндпоинт для POST-запроса */
     endpoint: string
 
-    /** The HTTP method to use for the request */
+    /** HTTP-метод, используемый для запроса */
     requestMethod: 'delete' | 'get' | 'patch' | 'post' | 'put'
 
-    /** Route parameters to substitute in endpoint URL */
+    /** Параметры маршрута для подстановки в URL */
     routeParams?: z.infer<RouteParamsSchema>
 
-    /** Schema for validating route parameters */
+    /** Схема для валидации параметров маршрута */
     routeParamsSchema?: RouteParamsSchema
 
-    /** Query parameters to include in request URL */
+    /** Query-параметры, включаемые в URL запроса */
     queryParams?: z.infer<RequestQuerySchema>
 
-    /** Schema for validating query parameters */
+    /** Схема для валидации query-параметров */
     requestQuerySchema?: RequestQuerySchema
 
-    /** The Zod schema for the request body */
+    /** Zod-схема для тела запроса */
     bodySchema?: BodySchema
 
-    /** The Zod schema for the response data */
+    /** Zod-схема для данных ответа */
     responseSchema: ResponseSchema
 
-    /** The mutation parameters for the react-query hook */
+    /** Параметры мутации для хука react-query */
     rMutationParams?: EnhancedMutationParams<
         z.infer<ResponseSchema>['response'],
         Error,
@@ -42,6 +42,6 @@ export interface CreateMutationHookArgs<
         z.infer<RouteParamsSchema>
     >
 
-    /** Custom error handler function */
+    /** Пользовательская функция обработки ошибок */
     errorHandler?: (error: unknown) => void
 }
