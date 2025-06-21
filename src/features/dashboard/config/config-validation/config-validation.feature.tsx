@@ -21,11 +21,11 @@ export const ConfigValidationFeature = {
             const validationResult = window.XrayParseConfig(currentValue)
 
             setResult(
-                `${dayjs().format('HH:mm:ss')} | ${validationResult || 'Xray config is valid.'}`
+                `${dayjs().format('HH:mm:ss')} | ${validationResult || 'Конфигурация Xray корректна.'}`
             )
             setIsConfigValid(!validationResult)
         } catch (err: unknown) {
-            setResult(`${dayjs().format('HH:mm:ss')} | Validation error: ${(err as Error).message}`)
+            setResult(`${dayjs().format('HH:mm:ss')} | Ошибка проверки: ${(err as Error).message}`)
             setIsConfigValid(false)
         }
     }

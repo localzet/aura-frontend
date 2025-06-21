@@ -24,7 +24,7 @@ export const MonacoSetupFeature = {
                 validate: true
             })
         } catch (error) {
-            consola.error('Failed to load JSON schema:', error)
+            consola.error('Не удалось загрузить схему JSON:', error)
         }
     }
 }

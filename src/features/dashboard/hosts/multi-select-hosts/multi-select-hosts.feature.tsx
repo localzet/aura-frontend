@@ -139,7 +139,7 @@ export const MultiSelectHostsFeature = (props: IProps) => {
         let localSelectedInbound: ComboboxItem | null = null
 
         modals.open({
-            title: t('multi-select-hosts.feature.set-inbound'),
+            title: 'Назначить входящий',
             centered: true,
             children: (
                 <Stack>
@@ -148,14 +148,14 @@ export const MultiSelectHostsFeature = (props: IProps) => {
                             label: inbound.tag,
                             value: inbound.uuid
                         }))}
-                        label={t('multi-select-hosts.feature.inbound')}
+                        label={'Входящий'}
                         onChange={(_value, option) => {
                             localSelectedInbound = option
                         }}
                     />
                     <Group justify="flex-end">
                         <Button onClick={() => modals.closeAll()} variant="subtle">
-                            {t('multi-select-hosts.feature.cancel')}
+                            Отмена
                         </Button>
                         <Button
                             onClick={() => {
@@ -170,14 +170,14 @@ export const MultiSelectHostsFeature = (props: IProps) => {
                                 }
                                 if (!localSelectedInbound) {
                                     notifications.show({
-                                        title: 'Error',
-                                        message: 'Please select an inbound',
+                                        title: 'Ошибка',
+                                        message: 'Пожалуйста, выберите входящий',
                                         color: 'red'
                                     })
                                 }
                             }}
                         >
-                            {t('multi-select-hosts.feature.set-inbound')}
+                            Назначить входящий
                         </Button>
                     </Group>
                 </Stack>
@@ -187,12 +187,12 @@ export const MultiSelectHostsFeature = (props: IProps) => {
 
     const setPortSelectedHosts = () => {
         modals.open({
-            title: t('multi-select-hosts.feature.set-port'),
+            title: 'Установить порт',
             centered: true,
             children: (
                 <Stack>
                     <NumberInput
-                        label={t('multi-select-hosts.feature.port')}
+                        label={'Порт'}
                         {...portField.getInputProps()}
                         error={portField.error}
                         max={65535}
@@ -202,7 +202,7 @@ export const MultiSelectHostsFeature = (props: IProps) => {
 
                     <Group justify="flex-end">
                         <Button onClick={() => modals.closeAll()} variant="subtle">
-                            {t('multi-select-hosts.feature.cancel')}
+                            Отмена
                         </Button>
                         <Button
                             onClick={async () => {
@@ -210,8 +210,8 @@ export const MultiSelectHostsFeature = (props: IProps) => {
 
                                 if (port === undefined) {
                                     notifications.show({
-                                        title: 'Error',
-                                        message: 'Port is required',
+                                        title: 'Ошибка',
+                                        message: 'Порт обязателен',
                                         color: 'red'
                                     })
                                     return
@@ -225,7 +225,7 @@ export const MultiSelectHostsFeature = (props: IProps) => {
                                 })
                             }}
                         >
-                            {t('multi-select-hosts.feature.set-port')}
+                            Установить порт
                         </Button>
                     </Group>
                 </Stack>
@@ -253,15 +253,15 @@ export const MultiSelectHostsFeature = (props: IProps) => {
                             <Group justify="flex-start">
                                 <Group justify="center" w="100%">
                                     <Badge color="blue" size="lg">
-                                        Selected: {selectedHosts.length}
+                                        Выбрано: {selectedHosts.length}
                                     </Badge>
                                 </Group>
                                 <Group grow justify="apart" preventGrowOverflow={false} wrap="wrap">
                                     <Button onClick={clearSelection} variant="subtle">
-                                        {t('multi-select-hosts.feature.clear-selection')}
+                                        Сбросить
                                     </Button>
                                     <Button onClick={selectAllHosts} variant="subtle">
-                                        {t('multi-select-hosts.feature.select-all')}
+                                        Выбрать все
                                     </Button>
                                 </Group>
                             </Group>
@@ -272,35 +272,35 @@ export const MultiSelectHostsFeature = (props: IProps) => {
                                     leftSection={<PiPulseDuotone />}
                                     onClick={enableSelectedHosts}
                                 >
-                                    {t('multi-select-hosts.feature.enable')}
+                                    Включить
                                 </Button>
                                 <Button
                                     color="gray"
                                     leftSection={<PiProhibitDuotone />}
                                     onClick={disableSelectedHosts}
                                 >
-                                    {t('multi-select-hosts.feature.disable')}
+                                    Выключить
                                 </Button>
                                 <Button
                                     color="cyan"
                                     leftSection={<PiTagDuotone />}
                                     onClick={setInboundSelectedHosts}
                                 >
-                                    {t('multi-select-hosts.feature.set-inbound')}
+                                    Назначить входящий
                                 </Button>
                                 <Button
                                     color="grape"
                                     leftSection={<PiArrowBendDownLeftDuotone />}
                                     onClick={setPortSelectedHosts}
                                 >
-                                    {t('multi-select-hosts.feature.set-port-0')}
+                                    Установить порт
                                 </Button>
                                 <Button
                                     color="red"
                                     leftSection={<PiTrash />}
                                     onClick={deleteSelectedHosts}
                                 >
-                                    {t('multi-select-hosts.feature.delete')}
+                                    Удалить
                                 </Button>
                             </Group>
                         </Stack>

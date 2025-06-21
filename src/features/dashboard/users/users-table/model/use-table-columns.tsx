@@ -125,7 +125,7 @@ export const useUserTableColumns = () => {
 
             {
                 accessorKey: 'tag',
-                header: 'Tag',
+                header: 'Тег',
                 Cell: ({ cell }) => <Badge size="lg">{cell.row.original.tag || '–'}</Badge>,
 
                 mantineTableBodyCellProps: {
@@ -135,7 +135,7 @@ export const useUserTableColumns = () => {
 
             {
                 accessorKey: 'email',
-                header: 'Email',
+                header: 'Почта',
                 accessorFn: (originalRow) => originalRow.email || '–',
                 minSize: 250,
                 size: 400,
@@ -147,7 +147,7 @@ export const useUserTableColumns = () => {
 
             {
                 accessorKey: 'firstConnectedAt',
-                header: 'First connected at',
+                header: 'Первое подключение',
                 accessorFn: (originalRow) =>
                     originalRow.firstConnectedAt
                         ? dayjs(originalRow.firstConnectedAt).format('DD/MM/YYYY, HH:mm')

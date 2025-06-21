@@ -25,7 +25,7 @@ export function UserActionsFeature(props: IProps) {
             <ActionIcon.Group>
                 <CopyButton timeout={2000} value={subscriptionUrl}>
                     {({ copied, copy }) => (
-                        <Tooltip label={copied ? 'Copied!' : 'Copy subscription URL'}>
+                        <Tooltip label={copied ? 'Скопировано!' : 'Копировать URL подписки'}>
                             <ActionIcon
                                 color={copied ? 'teal.5' : 'blue.5'}
                                 onClick={copy}

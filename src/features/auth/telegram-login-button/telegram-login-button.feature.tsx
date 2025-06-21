@@ -35,7 +35,7 @@ export const TelegramLoginButtonFeature = (props: IProps) => {
                 {
                     onError: (error) => {
                         notifications.show({
-                            title: 'Login',
+                            title: 'Вход',
                             message: error.message,
                             color: 'red'
                         })
@@ -49,7 +49,7 @@ export const TelegramLoginButtonFeature = (props: IProps) => {
                                     variant="filled"
                                 />
                             ),
-                            message: `Logged as ${data.username ? `@${data.username}` : data.first_name}`,
+                            message: `Вошли как ${data.username ? `@${data.username}` : data.first_name}`,
                             withBorder: true
                         })
 
@@ -77,7 +77,7 @@ export const TelegramLoginButtonFeature = (props: IProps) => {
             radius={'md'}
             variant="filled"
         >
-            Login
+            Войти
         </Button>
     )
 }

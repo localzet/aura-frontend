@@ -35,7 +35,7 @@ export const BulkAllUserActionsDangerTabFeature = (props: IProps) => {
                             color="red.6"
                             onClick={() => {
                                 modals.open({
-                                    title: 'Confirm Action',
+                                    title: 'Подтвердите действие',
                                     centered: true,
                                     children: (
                                         <DeleteAllUsersByStatusFeature
