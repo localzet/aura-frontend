@@ -2,11 +2,11 @@ import { consola } from 'consola/browser'
 import { isAxiosError } from 'axios'
 import { ZodError } from 'zod'
 
-/** Handle request errors */
+/** Обработка ошибок запроса */
 export function handleRequestError(error: unknown) {
     if (isAxiosError(error)) {
         const errorData = error.response?.data
-        const enhancedError = new Error(errorData?.message || 'Request failed')
+        const enhancedError = new Error(errorData?.message || 'Ошибка запроса')
         enhancedError.cause = errorData
         throw enhancedError
     }

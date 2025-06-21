@@ -1,22 +1,22 @@
 /**
- * Create a URL with query parameters and route parameters
+ * Создаёт URL с параметрами запроса и маршрута
  *
- * @param base - The base URL with route parameters (e.g. '/api/users/:id')
- * @param queryParams - Optional query parameters as key-value pairs. Values can be numbers, strings, objects (will be JSON stringified), or undefined
- * @param routeParams - Optional route parameters as key-value pairs to replace placeholders in base URL
- * @returns The URL with route params replaced and query string appended (if any params provided)
+ * @param base - Базовый URL с маршрутными параметрами (например, '/api/users/:id')
+ * @param queryParams - Необязательные параметры запроса в виде пар ключ-значение. Значения могут быть числами, строками, объектами (будут сериализованы в JSON) или undefined
+ * @param routeParams - Необязательные параметры маршрута в виде пар ключ-значение для замены плейсхолдеров в базовом URL
+ * @returns URL с подставленными маршрутными параметрами и добавленной строкой запроса (если параметры заданы)
  * @example
- * // Basic usage with route param
+ * // Простой пример с маршрутным параметром
  * createUrl('/api/users/:id', undefined, { id: 1 })
  * // => '/api/users/1'
  *
  * @example
- * // With query params
+ * // С параметрами запроса
  * createUrl('/api/users', { page: 1, limit: 10 })
  * // => '/api/users?page=1&limit=10'
  *
  * @example
- * // With both route and query params
+ * // С маршрутными и query-параметрами
  * createUrl('/api/users/:id/posts', { sort: 'desc' }, { id: 1 })
  * // => '/api/users/1/posts?sort=desc'
  */
