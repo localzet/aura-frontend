@@ -7,7 +7,7 @@ i18n.use(initReactI18next)
     .use(LanguageDetector)
     .use(HttpApi)
     .init({
-        fallbackLng: 'en',
+        fallbackLng: 'ru',
         debug: process.env.NODE_ENV === 'development',
         defaultNS: ['aura'],
         ns: ['aura'],

@@ -124,10 +124,7 @@ export function MainLayout() {
                                 githubLink="https://github.com/localzet/docs"
                                 isGithubLoading={isGithubLoading}
                                 stars={data?.totalStars}
-                                telegramLink="https://t.me/localzet"
                                 withGithub={!isSocialButton}
-                                withSupport={!isSocialButton}
-                                withTelegram={!isSocialButton}
                             />
                         </Group>
                     </Group>
@@ -206,7 +203,6 @@ export function MainLayout() {
                                         githubLink="https://github.com/localzet/docs"
                                         isGithubLoading={isGithubLoading}
                                         stars={data?.totalStars}
-                                        telegramLink="https://t.me/localzet"
                                         withLanguage={false}
                                         withLogout={false}
                                         withRefresh={false}

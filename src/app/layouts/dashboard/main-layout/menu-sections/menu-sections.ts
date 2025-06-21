@@ -131,18 +131,18 @@ export const useMenuSections = (): MenuItem[] => {
                     icon: HappLogo
                 },
                 {
-                    name: 'Subscription Page',
+                    name: 'Страница подписки',
                     href: ROUTES.DASHBOARD.UTILS.SUBSCRIPTION_PAGE_BUILDER,
                     icon: PiArrowsInCardinalFill
                 }
             ]
         },
         {
-            header: 'Superadmin',
+            header: 'Суперадмин',
             section: [
                 {
-                    name: 'Queues',
-                    // TODO: remove this after testing
+                    name: 'Очереди',
+                    // TODO: удалить после тестирования
                     href: '/api/queues',
                     icon: PiAirTrafficControlDuotone,
                     newTab: true
