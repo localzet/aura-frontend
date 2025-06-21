@@ -64,7 +64,7 @@ export function BuildInfoModal({
                     <Title c={theme.primaryColor} fw={700} order={3}>
                         Build Info
                     </Title>
-                    <Tooltip label={clipboard.copied ? 'Copied!' : 'Copy build info'}>
+                    <Tooltip label={clipboard.copied ? 'Скопировано!' : 'Копировать инфу'}>
                         <Button
                             color={clipboard.copied ? 'green' : 'gray'}
                             leftSection={
