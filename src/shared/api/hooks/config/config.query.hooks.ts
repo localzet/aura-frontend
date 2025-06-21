@@ -22,8 +22,8 @@ export const useGetConfig = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get XRay Config`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение конфигурации`,
+            message: error instanceof Error ? error.message : `Запрос завершился неизвестной ошибкой.`,
             color: 'red'
         })
     }

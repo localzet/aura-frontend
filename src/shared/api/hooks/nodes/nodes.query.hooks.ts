@@ -47,8 +47,8 @@ export const useGetNodes = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get All Nodes`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение всех нод`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -66,12 +66,13 @@ export const useGetNode = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get Node`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение ноды`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
 })
+
 export const useGetPubKey = createGetQueryHook({
     endpoint: GetPubKeyCommand.TSQ_url,
     responseSchema: GetPubKeyCommand.ResponseSchema,
@@ -84,8 +85,8 @@ export const useGetPubKey = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get PubKey`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение публичного ключа`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -101,8 +102,8 @@ export const useGetNodesUsageByRangeCommand = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get Nodes Usage By Range`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение статистики использования нод по периоду`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -120,8 +121,8 @@ export const useGetNodeUsersUsageByRange = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get Node Users Usage By Range`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение статистики пользователей ноды по периоду`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -137,8 +138,8 @@ export const useGetNodesRealtimeUsage = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get Nodes Realtime Usage`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение реального времени использования нод`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }

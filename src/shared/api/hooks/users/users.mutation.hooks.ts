@@ -16,7 +16,6 @@ import {
     UpdateUserCommand
 } from '@localzet/aura-contract'
 import { notifications } from '@mantine/notifications'
-
 import { createMutationHook } from '../../tsq-helpers'
 
 export const useCreateUser = createMutationHook({
@@ -24,20 +23,19 @@ export const useCreateUser = createMutationHook({
     bodySchema: CreateUserCommand.RequestSchema,
     responseSchema: CreateUserCommand.ResponseSchema,
     requestMethod: CreateUserCommand.endpointDetails.REQUEST_METHOD,
-
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User created successfully',
+                title: 'Выполнено',
+                message: 'Пользователь успешно создан',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Create User`,
+                title: `Создание пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -52,16 +50,16 @@ export const useUpdateUser = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User updated successfully',
+                title: 'Выполнено',
+                message: 'Пользователь успешно обновлён',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Update User`,
+                title: `Обновление пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -76,16 +74,16 @@ export const useDeleteUser = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User deleted successfully',
+                title: 'Выполнено',
+                message: 'Пользователь успешно удалён',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Delete User`,
+                title: `Удаление пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -100,16 +98,16 @@ export const useRevokeUserSubscription = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User subscription revoked successfully',
+                title: 'Выполнено',
+                message: 'Подписка пользователя успешно отозвана',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Revoke User Subscription`,
+                title: `Отзыв подписки пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -124,16 +122,16 @@ export const useEnableUser = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User enabled successfully',
+                title: 'Выполнено',
+                message: 'Пользователь успешно включён',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Enable User`,
+                title: `Включение пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -148,16 +146,16 @@ export const useDisableUser = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User disabled successfully',
+                title: 'Выполнено',
+                message: 'Пользователь успешно отключён',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Disable User`,
+                title: `Отключение пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -172,16 +170,16 @@ export const useResetUserTraffic = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'User traffic reset successfully',
+                title: 'Выполнено',
+                message: 'Трафик пользователя успешно сброшен',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Reset User Traffic`,
+                title: `Сброс трафика пользователя`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -203,16 +201,16 @@ export const useBulkUpdateUsers = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Update Users`,
+                title: `Массовое обновление пользователей`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -227,16 +225,16 @@ export const useBulkResetTraffic = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Reset Traffic`,
+                title: `Массовый сброс трафика`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -251,16 +249,16 @@ export const useBulkRevokeUsersSubscription = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Revoke Users Subscription`,
+                title: `Массовый отзыв подписок`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -275,16 +273,16 @@ export const useBulkDeleteUsers = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Delete Users`,
+                title: `Массовое удаление пользователей`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -299,16 +297,16 @@ export const useBulkSetActiveInbounds = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Set Active Inbounds`,
+                title: `Массовое назначение инбаундов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -323,16 +321,16 @@ export const useBulkAllUpdateUsers = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk All Update Users`,
+                title: `Массовое обновление всех пользователей`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -346,16 +344,16 @@ export const useBulkAllResetTrafficUsers = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Task added to queue successfully',
+                title: 'Выполнено',
+                message: 'Задача успешно добавлена в очередь',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk All Reset Traffic Users`,
+                title: `Массовый сброс трафика для всех пользователей`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

@@ -19,16 +19,16 @@ export const useCreateNode = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Node created successfully',
+                title: 'Выполнено',
+                message: 'Нода успешно создана',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Create Node`,
+                title: `Создание ноды`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -43,16 +43,16 @@ export const useUpdateNode = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Node updated successfully',
+                title: 'Выполнено',
+                message: 'Нода успешно обновлена',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Update Node`,
+                title: `Обновление ноды`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -67,16 +67,16 @@ export const useDeleteNode = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Node deleted successfully',
+                title: 'Выполнено',
+                message: 'Нода успешно удалена',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Delete Node`,
+                title: `Удаление ноды`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -91,16 +91,16 @@ export const useEnableNode = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Node enabled successfully',
+                title: 'Выполнено',
+                message: 'Нода успешно включена',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Enable Node`,
+                title: `Включение ноды`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -115,16 +115,16 @@ export const useDisableNode = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Node disabled successfully',
+                title: 'Выполнено',
+                message: 'Нода успешно отключена',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Disable Node`,
+                title: `Отключение ноды`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -138,21 +138,22 @@ export const useRestartAllNodes = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Please wait for the nodes to reconnect',
+                title: 'Выполнено',
+                message: 'Пожалуйста, подождите пока ноды переподключатся',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Restart All Nodes`,
+                title: `Перезапуск всех нод`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
     }
 })
+
 export const useReorderNodes = createMutationHook({
     endpoint: ReorderNodeCommand.TSQ_url,
     bodySchema: ReorderNodeCommand.RequestSchema,
@@ -161,9 +162,9 @@ export const useReorderNodes = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Reorder Nodes`,
+                title: `Изменение порядка нод`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

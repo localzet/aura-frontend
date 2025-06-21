@@ -11,16 +11,16 @@ export const useUpdateConfig = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Config updated successfully',
+                title: 'Выполнено',
+                message: 'Конфигурация успешно обновлена',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Update XRay Config`,
+                title: `Обновление конфигурации`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

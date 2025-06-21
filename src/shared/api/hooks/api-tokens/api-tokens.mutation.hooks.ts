@@ -11,16 +11,16 @@ export const useCreateApiToken = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Api token created successfully',
+                title: 'Выполнено',
+                message: 'API-токен успешно создан',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Create Api Token`,
+                title: `Создание API-токена`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -35,16 +35,16 @@ export const useDeleteApiToken = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Api token deleted successfully',
+                title: 'Выполнено',
+                message: 'API-токен успешно удален',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Delete Api Token`,
+                title: `Удаление API-токена`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

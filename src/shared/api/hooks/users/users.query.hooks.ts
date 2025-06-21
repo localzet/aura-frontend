@@ -43,8 +43,8 @@ export const useGetUserByUuid = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get User By UUID`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение пользователя по UUID`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -63,8 +63,8 @@ export const useGetUsersV2 = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get All Users`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение всех пользователей`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -80,8 +80,8 @@ export const useGetSubscriptionInfoByShortUuid = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get Subscription Info By Short UUID`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение информации о подписке по короткому UUID`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -99,8 +99,8 @@ export const useGetUserUsageByRange = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get User Usage By Range`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение статистики использования пользователя за период`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }
@@ -116,8 +116,8 @@ export const useGetUserTags = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Get User Tags`,
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: `Получение тегов пользователей`,
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }

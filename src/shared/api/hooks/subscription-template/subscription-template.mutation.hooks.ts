@@ -11,16 +11,16 @@ export const useUpdateSubscriptionTemplate = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Subscription template updated successfully',
+                title: 'Выполнено',
+                message: 'Шаблон подписки успешно обновлён',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Update Subscription Template`,
+                title: `Обновление шаблона подписки`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

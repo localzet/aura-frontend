@@ -11,16 +11,16 @@ export const useDeleteUserHwidDevice = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Device deleted successfully',
+                title: 'Выполнено',
+                message: 'Устройство успешно удалено',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: 'Delete Device',
+                title: 'Удаление устройства',
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

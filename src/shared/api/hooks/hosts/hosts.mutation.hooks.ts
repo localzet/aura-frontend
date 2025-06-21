@@ -21,16 +21,16 @@ export const useCreateHost = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Host created successfully',
+                title: 'Выполнено',
+                message: 'Хост успешно создан',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Create Host`,
+                title: `Создание хоста`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -45,16 +45,16 @@ export const useUpdateHost = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Host updated successfully',
+                title: 'Выполнено',
+                message: 'Хост успешно обновлен',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Update Host`,
+                title: `Обновление хоста`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -69,16 +69,16 @@ export const useDeleteHost = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Host deleted successfully',
+                title: 'Выполнено',
+                message: 'Хост успешно удален',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Delete Host`,
+                title: `Удаление хоста`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -93,9 +93,9 @@ export const useReorderHosts = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Reorder Hosts`,
+                title: `Изменение порядка хостов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -110,16 +110,16 @@ export const useBulkDeleteHosts = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Hosts deleted successfully',
+                title: 'Выполнено',
+                message: 'Хосты успешно удалены',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Delete Hosts`,
+                title: `Массовое удаление хостов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -134,16 +134,16 @@ export const useBulkEnableHosts = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Hosts enabled successfully',
+                title: 'Выполнено',
+                message: 'Хосты успешно включены',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Enable Hosts`,
+                title: `Массовое включение хостов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -158,16 +158,16 @@ export const useBulkDisableHosts = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Hosts disabled successfully',
+                title: 'Выполнено',
+                message: 'Хосты успешно отключены',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Bulk Disable Hosts`,
+                title: `Массовое отключение хостов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -182,16 +182,16 @@ export const useSetInboundHosts = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Hosts inbound set successfully',
+                title: 'Выполнено',
+                message: 'Инбаунд успешно установлен для хостов',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Set Inbound To Many Hosts`,
+                title: `Установка инбаунда для нескольких хостов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -206,16 +206,16 @@ export const useSetPortToManyHosts = createMutationHook({
     rMutationParams: {
         onSuccess: () => {
             notifications.show({
-                title: 'Success',
-                message: 'Hosts port set successfully',
+                title: 'Выполнено',
+                message: 'Порт успешно установлен для хостов',
                 color: 'teal'
             })
         },
         onError: (error) => {
             notifications.show({
-                title: `Set Port To Many Hosts`,
+                title: `Установка порта для нескольких хостов`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

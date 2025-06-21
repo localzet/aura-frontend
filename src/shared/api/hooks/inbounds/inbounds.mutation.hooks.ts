@@ -16,9 +16,9 @@ export const useAddInboundToUsers = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Add Inbound To Users`,
+                title: `Добавление инбаунда пользователям`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -33,9 +33,9 @@ export const useRemoveInboundFromUsers = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Remove Inbound From Users`,
+                title: `Удаление инбаунда у пользователей`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -50,9 +50,9 @@ export const useAddInboundToNodes = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Add Inbound To Nodes`,
+                title: `Добавление инбаунда нодам`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -67,9 +67,9 @@ export const useRemoveInboundFromNodes = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Remove Inbound From Nodes`,
+                title: `Удаление инбаунда у нод`,
                 message:
-                    error instanceof Error ? error.message : `Request failed with unknown error.`,
+                    error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }

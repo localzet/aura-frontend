@@ -22,8 +22,8 @@ export const useGetUserHwidDevices = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: 'Get User HWIDs and Devices',
-            message: error instanceof Error ? error.message : `Request failed with unknown error.`,
+            title: 'Получение HWID и устройств пользователя',
+            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
             color: 'red'
         })
     }

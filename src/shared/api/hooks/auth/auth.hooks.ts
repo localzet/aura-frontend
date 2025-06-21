@@ -18,7 +18,7 @@ export const useLogin = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: 'Login',
+                title: 'Вход',
                 message: error.message,
                 color: 'red'
             })
@@ -34,15 +34,15 @@ export const useRegister = createMutationHook({
     rMutationParams: {
         onSuccess: (data) => {
             notifications.show({
-                title: 'Register',
-                message: 'User registered successfully',
+                title: 'Регистрация',
+                message: 'Пользователь зарегистрирован',
                 color: 'green'
             })
             setToken({ token: data.accessToken })
         },
         onError: (error) => {
             notifications.show({
-                title: 'Register',
+                title: 'Регистрация',
                 message: error.message,
                 color: 'red'
             })
