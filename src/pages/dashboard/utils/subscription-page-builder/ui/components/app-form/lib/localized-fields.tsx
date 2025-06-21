@@ -7,33 +7,12 @@ export const LocalizedFields = (props: LocalizedFieldsProps) => {
     const { field, isDescription, section, updateField, value } = props
 
     return (
-        <Tabs defaultValue="en">
+        <Tabs defaultValue="ru">
             <Tabs.List grow>
-                <Tabs.Tab value="en">🇬🇧 English</Tabs.Tab>
                 <Tabs.Tab value="ru">🇷🇺 Russian</Tabs.Tab>
+                <Tabs.Tab value="en">🇬🇧 English</Tabs.Tab>
                 <Tabs.Tab value="fa">🇮🇷 Persian</Tabs.Tab>
             </Tabs.List>
-
-            <Tabs.Panel pt="xs" value="en">
-                {isDescription ? (
-                    <Textarea
-                        autosize
-                        maxRows={10}
-                        minRows={3}
-                        onChange={(e) =>
-                            updateField(section as keyof AppConfig, field, 'en', e.target.value)
-                        }
-                        value={value.en}
-                    />
-                ) : (
-                    <TextInput
-                        onChange={(e) =>
-                            updateField(section as keyof AppConfig, field, 'en', e.target.value)
-                        }
-                        value={value.en}
-                    />
-                )}
-            </Tabs.Panel>
 
             <Tabs.Panel pt="xs" value="ru">
                 {isDescription ? (
@@ -54,6 +33,27 @@ export const LocalizedFields = (props: LocalizedFieldsProps) => {
                             updateField(section as keyof AppConfig, field, 'ru', e.target.value)
                         }
                         value={value.ru}
+                    />
+                )}
+            </Tabs.Panel>
+
+            <Tabs.Panel pt="xs" value="en">
+                {isDescription ? (
+                    <Textarea
+                        autosize
+                        maxRows={10}
+                        minRows={3}
+                        onChange={(e) =>
+                            updateField(section as keyof AppConfig, field, 'en', e.target.value)
+                        }
+                        value={value.en}
+                    />
+                ) : (
+                    <TextInput
+                        onChange={(e) =>
+                            updateField(section as keyof AppConfig, field, 'en', e.target.value)
+                        }
+                        value={value.en}
                     />
                 )}
             </Tabs.Panel>

@@ -82,29 +82,12 @@ export const ButtonFields = (props: ButtonFieldsProps) => {
                             my="md"
                         />
 
-                        <Tabs defaultValue="en" variant="default">
+                        <Tabs defaultValue="ru" variant="default">
                             <Tabs.List grow>
-                                <Tabs.Tab value="en">🇬🇧 English</Tabs.Tab>
                                 <Tabs.Tab value="ru">🇷🇺 Russian</Tabs.Tab>
+                                <Tabs.Tab value="en">🇬🇧 English</Tabs.Tab>
                                 <Tabs.Tab value="fa">🇮🇷 Persian</Tabs.Tab>
                             </Tabs.List>
-
-                            <Tabs.Panel pt="md" value="en">
-                                <TextInput
-                                    onChange={(e) =>
-                                        updateButtonText(
-                                            localApp,
-                                            section,
-                                            index,
-                                            'en',
-                                            e.target.value,
-                                            updateApp
-                                        )
-                                    }
-                                    placeholder="Button text in English"
-                                    value={button.buttonText.en}
-                                />
-                            </Tabs.Panel>
 
                             <Tabs.Panel pt="md" value="ru">
                                 <TextInput
@@ -121,6 +104,23 @@ export const ButtonFields = (props: ButtonFieldsProps) => {
                                     }
                                     placeholder="Текст кнопки на русском"
                                     value={button.buttonText.ru}
+                                />
+                            </Tabs.Panel>
+
+                            <Tabs.Panel pt="md" value="en">
+                                <TextInput
+                                    onChange={(e) =>
+                                        updateButtonText(
+                                            localApp,
+                                            section,
+                                            index,
+                                            'en',
+                                            e.target.value,
+                                            updateApp
+                                        )
+                                    }
+                                    placeholder="Button text in English"
+                                    value={button.buttonText.en}
                                 />
                             </Tabs.Panel>
 

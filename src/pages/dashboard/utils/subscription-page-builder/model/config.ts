@@ -18,7 +18,7 @@ export const emptyTitleStep: TitleStep = {
 
 export const createEmptyApp = (platform: 'android' | 'ios' | 'pc'): AppConfig => ({
     id: `new-app-${platform}-${Date.now()}`.toLowerCase() as `${Lowercase<string>}`,
-    name: 'New App',
+    name: 'Новое приложение',
     isFeatured: false,
     urlScheme: '',
     installationStep: {

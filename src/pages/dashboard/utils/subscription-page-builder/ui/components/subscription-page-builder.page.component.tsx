@@ -153,10 +153,10 @@ export const SubscriptionPageBuilderComponent = () => {
                 const isValid = validateAndApplyConfig(configData)
 
                 if (!isValid) {
-                    consola.error('Validation failed for imported config')
+                    consola.error('Ошибка валидации импортированной конфигурации')
                 }
             } catch (error) {
-                consola.error('Failed to parse config file', error)
+                consola.error('Не удалось распарсить файл конфигурации', error)
                 setValidationErrors([
                     t('subscription-page-builder.page.component.failed-to-parse-config')
                 ])
@@ -176,17 +176,17 @@ export const SubscriptionPageBuilderComponent = () => {
             const response = await fetch(DEFAULT_CONFIG_URL)
 
             if (!response.ok) {
-                throw new Error(`Failed to fetch: ${response.status}`)
+                throw new Error(`Не удалось загрузить: ${response.status}`)
             }
 
             const configData = await response.json()
             const isValid = validateAndApplyConfig(configData)
 
             if (!isValid) {
-                consola.error('Validation failed for default config')
+                consola.error('Ошибка валидации дефолтной конфигурации')
             }
         } catch (error) {
-            consola.error('Failed to load default config', error)
+            consola.error('Не удалось загрузить дефолтную конфигурацию', error)
             setValidationErrors([
                 t(
                     'subscription-page-builder.page.component.failed-to-load-default-config-check-your-internet-connection'
@@ -267,7 +267,7 @@ export const SubscriptionPageBuilderComponent = () => {
                                         >
                                             <Text fw={500}>{app.name}</Text>
                                             <Text c="dimmed" size="xs">
-                                                {app.urlScheme ? app.urlScheme : 'No URL scheme'}
+                                                {app.urlScheme ? app.urlScheme : 'Без URL схемы'}
                                             </Text>
                                         </Paper>
                                     ))
