@@ -11,30 +11,30 @@ type QueryParams<R, Q> = {
 }
 
 /**
- * Creates a custom hook for performing GET requests with react-query and Zod validation.
- * This hook handles data fetching, caching, validation and error handling in a type-safe way.
+ * Создаёт пользовательский хук для выполнения GET-запросов с помощью react-query и валидацией через Zod.
+ * Этот хук обрабатывает получение данных, кэширование, валидацию и обработку ошибок с типобезопасностью.
  *
- * @template ResponseSchema - Zod schema type for validating API response
- * @template RequestQuerySchema - Zod schema type for validating query parameters
- * @template RouteParamsSchema - Zod schema type for validating route parameters
- * @template ErrorHandler - Type for custom error handler function
+ * @template ResponseSchema - Zod-схема для валидации ответа от API
+ * @template RequestQuerySchema - Zod-схема для валидации query-параметров
+ * @template RouteParamsSchema - Zod-схема для валидации параметров маршрута
+ * @template ErrorHandler - Тип пользовательского обработчика ошибок
  *
- * @param options - Configuration options for creating the query hook
- * @param options.endpoint - API endpoint URL with optional route params (e.g. '/api/users/:id')
- * @param options.responseSchema - Zod schema for validating API response data
- * @param options.requestQuerySchema - Optional Zod schema for validating query parameters
- * @param options.routeParamsSchema - Optional Zod schema for validating route parameters
- * @param options.rQueryParams - React Query options (staleTime, refetchInterval etc.)
- * @param options.queryParams - Optional default query parameters to include in every request
- * @param options.routeParams - Optional default route parameters to include in every request
- * @param options.errorHandler - Optional custom error handler function
- * @param options.getQueryKey - Function to generate unique React Query cache key
+ * @param options - Настройки для создания хука запроса
+ * @param options.endpoint - URL API-эндпоинта с необязательными маршрутными параметрами (например, '/api/users/:id')
+ * @param options.responseSchema - Zod-схема для валидации данных ответа от API
+ * @param options.requestQuerySchema - Необязательная Zod-схема для валидации query-параметров
+ * @param options.routeParamsSchema - Необязательная Zod-схема для валидации параметров маршрута
+ * @param options.rQueryParams - Опции React Query (staleTime, refetchInterval и др.)
+ * @param options.queryParams - Необязательные query-параметры по умолчанию для каждого запроса
+ * @param options.routeParams - Необязательные маршрутные параметры по умолчанию для каждого запроса
+ * @param options.errorHandler - Необязательный пользовательский обработчик ошибок
+ * @param options.getQueryKey - Функция генерации уникального ключа кэша React Query
  *
- * @returns A custom React hook that returns UseQueryResult with proper typing
+ * @returns Пользовательский React-хук, возвращающий UseQueryResult с корректной типизацией
  *
  * @example
  * ```typescript
- * // Define the query hook
+ * // Определяем хук
  * const useGetUsers = createGetQueryHook({
  *   endpoint: '/api/users',
  *   responseSchema: z.object({
@@ -54,14 +54,14 @@ type QueryParams<R, Q> = {
  *   getQueryKey: (params) => ['users', params]
  * });
  *
- * // Use the hook in a component
+ * // Используем хук в компоненте
  * function UsersList() {
  *   const { data, isLoading, error } = useGetUsers({
  *     query: { page: 1, limit: 10 }
  *   });
  *
- *   if (isLoading) return <div>Loading...</div>;
- *   if (error) return <div>Error: {error.message}</div>;
+ *   if (isLoading) return <div>Загрузка...</div>;
+ *   if (error) return <div>Ошибка: {error.message}</div>;
  *
  *   return (
  *     <ul>
@@ -80,15 +80,15 @@ export function createGetQueryHook<
     RouteParamsSchema extends z.ZodType,
     ErrorHandler extends (error: unknown) => void = (error: unknown) => void
 >({
-    endpoint,
-    responseSchema,
-    requestQuerySchema,
-    rQueryParams,
-    queryParams,
-    routeParams,
-    errorHandler,
-    getQueryKey
-}: CreateGetQueryHookArgs<ResponseSchema, RequestQuerySchema, RouteParamsSchema> & {
+      endpoint,
+      responseSchema,
+      requestQuerySchema,
+      rQueryParams,
+      queryParams,
+      routeParams,
+      errorHandler,
+      getQueryKey
+  }: CreateGetQueryHookArgs<ResponseSchema, RequestQuerySchema, RouteParamsSchema> & {
     getQueryKey: (
         params: QueryParams<z.infer<RouteParamsSchema>, z.infer<RequestQuerySchema>>
     ) => QueryKey
