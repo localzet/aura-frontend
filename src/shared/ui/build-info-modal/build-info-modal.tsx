@@ -39,11 +39,11 @@ interface BuildInfoModalProps {
 }
 
 export function BuildInfoModal({
-    opened,
-    onClose,
-    buildInfo,
-    isNewVersionAvailable
-}: BuildInfoModalProps) {
+                                   opened,
+                                   onClose,
+                                   buildInfo,
+                                   isNewVersionAvailable
+                               }: BuildInfoModalProps) {
     const buildDate = new Date(buildInfo.buildTime).toLocaleString()
     const clipboard = useClipboard({ timeout: 1000 })
     const theme = useMantineTheme()
@@ -62,9 +62,9 @@ export function BuildInfoModal({
             title={
                 <Group justify="space-between" w="100%">
                     <Title c={theme.primaryColor} fw={700} order={3}>
-                        Build Info
+                        Информация о сборке
                     </Title>
-                    <Tooltip label={clipboard.copied ? 'Скопировано!' : 'Копировать инфу'}>
+                    <Tooltip label={clipboard.copied ? 'Скопировано!' : 'Скопировать инфу'}>
                         <Button
                             color={clipboard.copied ? 'green' : 'gray'}
                             leftSection={
@@ -75,7 +75,7 @@ export function BuildInfoModal({
                             size="compact-sm"
                             variant="light"
                         >
-                            Copy
+                            Копировать
                         </Button>
                     </Tooltip>
                 </Group>
@@ -93,20 +93,20 @@ export function BuildInfoModal({
                     >
                         <Group align="flex-start" gap="md">
                             <ThemeIcon color="cyan" radius="xl" size={48} variant="outline">
-                                <Logo size={24} />
+                                <Logo size={32} />
                             </ThemeIcon>
                             <Stack gap="xs" style={{ flex: 1 }}>
                                 <Text c="teal.5" fw={700} size="md">
-                                    Update available
+                                    Доступно обновление
                                 </Text>
                                 <Text c="dimmed" size="md">
-                                    A new version is available.
+                                    Доступна новая версия.
                                 </Text>
                                 <Button
                                     color="teal"
                                     component="a"
                                     fullWidth={false}
-                                    href={'https://github.com/localzet/docs/releases/latest'}
+                                    href={'https://github.com/localzet/aura-backend/releases/latest'}
                                     leftSection={<IconBrandGithub size={16} />}
                                     mt="sm"
                                     radius="md"
@@ -115,7 +115,7 @@ export function BuildInfoModal({
                                     target="_blank"
                                     variant="light"
                                 >
-                                    Check out
+                                    Посмотреть
                                 </Button>
                             </Stack>
                         </Group>
@@ -138,7 +138,7 @@ export function BuildInfoModal({
                             </ThemeIcon>
                             <Box style={{ flex: 1 }}>
                                 <Text fw={700} size="md">
-                                    Build Time
+                                    Время сборки
                                 </Text>
                                 <Text c="dimmed" mt={4} size="sm">
                                     {buildDate}
@@ -162,7 +162,7 @@ export function BuildInfoModal({
                             </ThemeIcon>
                             <Box style={{ flex: 1 }}>
                                 <Text fw={700} size="md">
-                                    Branch
+                                    Ветка
                                 </Text>
                                 <Flex gap="xs" mt={6}>
                                     <Badge
@@ -205,7 +205,7 @@ export function BuildInfoModal({
                             </ThemeIcon>
                             <Box style={{ flex: 1 }}>
                                 <Text fw={700} size="md">
-                                    Commit
+                                    Коммит
                                 </Text>
                                 <Code fz={'sm'}>{buildInfo.commit}</Code>
                             </Box>
@@ -223,7 +223,7 @@ export function BuildInfoModal({
                         target="_blank"
                         variant="outline"
                     >
-                        View on GitHub
+                        Открыть на GitHub
                     </Button>
                 </Group>
             </Stack>

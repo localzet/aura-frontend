@@ -40,8 +40,8 @@ export const LoginFormFeature = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <Container my={40} size={'100%'}>
-                <Paper mt={30} p={30}>
+            <Container size={'100%'}>
+                <Paper mt={10} p={30}>
                     <TextInput
                         label={t('login-form.feature.username')}
                         name="username"

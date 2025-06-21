@@ -18,20 +18,13 @@ interface HeaderControlsProps extends BoxProps {
 }
 
 export function HeaderControls({
-    githubLink,
-    withGithub = true,
     withLogout = true,
     withRefresh = true,
     withLanguage = true,
-    stars,
-    isGithubLoading,
     ...others
 }: HeaderControlsProps) {
     return (
         <Group gap="xs" {...others}>
-            {withGithub && (
-                <GithubControl isLoading={isGithubLoading} link={githubLink!} stars={stars} />
-            )}
             {withLanguage && <LanguageControl />}
             {withRefresh && <RefreshControl />}
             {withLogout && <LogoutControl />}

@@ -100,8 +100,8 @@ export const RegisterFormFeature = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <Container my={40} size={'100%'}>
-                <Paper mt={30} p={30} radius="md">
+            <Container size={'100%'}>
+                <Paper mt={10} p={30} radius="md">
                     <Title mb="xs" order={2} ta="center">
                         {t('register-form.feature.sign-up')}
                     </Title>

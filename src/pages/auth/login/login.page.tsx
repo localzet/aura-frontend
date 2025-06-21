@@ -33,7 +33,7 @@ export const LoginPage = () => {
     return (
         <Page title="Login">
             <Stack align="center" gap="xl">
-                <Group align="center" gap={4} justify="center">
+                <Group align="center" gap={10} justify="center" ml={-20}>
                     <Logo c="cyan" w="3rem" />
                     <Title order={1} pos="relative">
                         <Text c="cyan" component="span" fw="inherit" fz="inherit" pos="relative">
@@ -44,10 +44,10 @@ export const LoginPage = () => {
                             bottom="-1rem"
                             c="cyan"
                             h="0.625rem"
-                            left="0"
+                            left="-2rem"
                             pos="absolute"
                             style={{ zIndex: 1 }}
-                            w="7.852rem"
+                            w="8.852rem"
                         />
                     </Title>
                 </Group>

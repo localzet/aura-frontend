@@ -80,7 +80,7 @@ export function MainLayout() {
                 release: {
                     tag: string
                 }
-            }>('https://ungh.cc/repos/localzet/docs/releases/latest')
+            }>('https://ungh.cc/repos/localzet/aura-backend/releases/latest')
             return response.data.release.tag
         }
     })
@@ -120,12 +120,7 @@ export function MainLayout() {
                             />
                         </Group>
                         <Group style={{ flexShrink: 0 }}>
-                            <HeaderControls
-                                githubLink="https://github.com/localzet/docs"
-                                isGithubLoading={isGithubLoading}
-                                stars={data?.totalStars}
-                                withGithub={!isSocialButton}
-                            />
+                            <HeaderControls/>
                         </Group>
                     </Group>
                 </Container>
@@ -140,14 +135,14 @@ export function MainLayout() {
             >
                 <AppShell.Section>
                     <Group align="center" mb="md">
-                        <Group gap="xs" justify="space-around" w="100%">
+                        <Group gap="xs" justify="space-between" mx={10} w="100%">
                             <Burger
                                 hiddenFrom="lg"
                                 onClick={isMobile ? toggleMobile : toggleDesktop}
                                 opened={isMobile ? mobileOpened : desktopOpened}
                                 size="sm"
                             />
-                            <Group gap={4}>
+                            <Group gap={10}>
                                 <Logo c="cyan" w="2.5rem" />
                                 <Text fw={700} size="lg">
                                     <Text c="cyan" component="span" fw={700}>
@@ -200,9 +195,6 @@ export function MainLayout() {
                             {isSocialButton && (
                                 <Group style={{ flexShrink: 0 }}>
                                     <HeaderControls
-                                        githubLink="https://github.com/localzet/docs"
-                                        isGithubLoading={isGithubLoading}
-                                        stars={data?.totalStars}
                                         withLanguage={false}
                                         withLogout={false}
                                         withRefresh={false}
