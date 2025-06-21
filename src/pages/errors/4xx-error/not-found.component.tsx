@@ -28,14 +28,13 @@ export function NotFoundPageComponent() {
             <div className={classes.inner}>
                 <Illustration className={classes.image} />
                 <div className={classes.content}>
-                    <Title className={classes.title}>Nothing to see here</Title>
+                    <Title className={classes.title}>Здесь ничего нет</Title>
                     <Text c="dimmed" className={classes.description} size="lg" ta="center">
-                        Page you are trying to open does not exist. You may have mistyped the
-                        address, or the page has been moved to another URL.
+                        Страница, которую вы пытаетесь открыть, не существует. Возможно, вы ошиблись в адресе или страница была перемещена.
                     </Text>
                     <Group justify="center">
                         <Button onClick={handleGoBack} size="md">
-                            Take me back to home page
+                            Вернуться на главную
                         </Button>
                     </Group>
                 </div>
