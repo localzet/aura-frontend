@@ -7,8 +7,8 @@ export const baseNotificationsMutations = (id: string, refetch: () => void) => {
             notifications.show({
                 id,
                 loading: true,
-                title: 'Processing',
-                message: 'This operation may take some time...',
+                title: 'Обработка',
+                message: 'Операция может занять некоторое время...',
                 autoClose: false,
                 withCloseButton: false
             })
@@ -18,8 +18,8 @@ export const baseNotificationsMutations = (id: string, refetch: () => void) => {
                 notifications.update({
                     id,
                     color: 'red',
-                    title: 'Error',
-                    message: error instanceof Error ? error.message : 'Unknown error',
+                    title: 'Ошибка',
+                    message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                     loading: false,
                     autoClose: 5000
                 })
@@ -30,8 +30,8 @@ export const baseNotificationsMutations = (id: string, refetch: () => void) => {
                 icon: <IconCheck size={18} />,
                 id,
                 color: 'teal',
-                title: 'Success',
-                message: 'Operation completed successfully',
+                title: 'Успех',
+                message: 'Операция успешно завершена',
                 loading: false,
                 autoClose: 3000
             })

@@ -54,7 +54,7 @@ export function NodesBandwidthTableWidget() {
         /* prettier-ignore */
         mantineToolbarAlertBannerProps: isError ? {
             color: 'red',
-            children: 'Error loading data'
+            children: 'Ошибка загрузки данных'
         } : undefined,
 
         onSortingChange: setSorting,

@@ -23,6 +23,6 @@ export const configureMonaco = (monaco: Monaco, language: 'json' | 'yaml') => {
             })
         }
     } catch (error) {
-        consola.error(`Failed to configure Monaco ${language.toUpperCase()}:`, error)
+        consola.error(`Не удалось настроить Monaco для ${language.toUpperCase()}:`, error)
     }
 }
