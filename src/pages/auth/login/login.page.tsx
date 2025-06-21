@@ -54,7 +54,7 @@ export const LoginPage = () => {
 
                 {!authStatus && (
                     <Badge color="cyan" mt={10} size="lg" variant="filled">
-                        Server is not responding. Check logs.
+                        Сервис временно недоступен
                     </Badge>
                 )}
 
