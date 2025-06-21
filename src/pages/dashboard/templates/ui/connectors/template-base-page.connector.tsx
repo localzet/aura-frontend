@@ -27,7 +27,7 @@ export function TemplateBasePageConnector(props: Props) {
     })
 
     if (isConfigLoading) {
-        return <LoadingScreen text={`Loading template...`} />
+        return <LoadingScreen text={`Загрузка шаблона...`} />
     }
 
     return (

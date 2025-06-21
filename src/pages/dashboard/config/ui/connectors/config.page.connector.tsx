@@ -24,7 +24,7 @@ export function ConfigPageConnector() {
                 const go = new window.Go()
                 const wasmInitialized = new Promise<void>((resolve) => {
                     window.onWasmInitialized = () => {
-                        consola.info('WASM module initialized')
+                        consola.info('Модуль WASM инициализирован')
                         resolve()
                     }
                 })
@@ -40,10 +40,10 @@ export function ConfigPageConnector() {
                 if (typeof window.XrayParseConfig === 'function') {
                     setIsLoading(false)
                 } else {
-                    throw new Error('XrayParseConfig not initialized')
+                    throw new Error('XrayParseConfig не инициализирована')
                 }
             } catch (err: unknown) {
-                consola.error('WASM initialization error:', err)
+                consola.error('Ошибка инициализации WASM:', err)
                 setIsLoading(false)
             }
         }
@@ -57,7 +57,7 @@ export function ConfigPageConnector() {
     }, [])
 
     if (isLoading || isConfigLoading || !config) {
-        return <LoadingScreen text={`WASM module is loading...`} value={downloadProgress} />
+        return <LoadingScreen text={`Загрузка модуля WASM...`} value={downloadProgress} />
     }
 
     return <ConfigPageComponent config={config} />
