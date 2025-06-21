@@ -142,7 +142,6 @@ export const useMenuSections = (): MenuItem[] => {
             section: [
                 {
                     name: 'Очереди',
-                    // TODO: удалить после тестирования
                     href: '/api/queues',
                     icon: PiAirTrafficControlDuotone,
                     newTab: true
