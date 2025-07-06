@@ -59,18 +59,6 @@ export function MainLayout() {
         }
     })
 
-    const { data, isLoading: isGithubLoading } = useQuery({
-        queryKey: ['github-stars'],
-        staleTime: sToMs(3600),
-        refetchInterval: sToMs(3600),
-        queryFn: async () => {
-            const response = await axios.get<{
-                totalStars: number
-            }>('https://ungh.cc/stars/localzet/*')
-            return response.data
-        }
-    })
-
     const { data: latestVersion } = useQuery({
         queryKey: ['github-latest-version'],
         staleTime: sToMs(3600),
