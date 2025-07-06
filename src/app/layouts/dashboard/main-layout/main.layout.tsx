@@ -68,7 +68,7 @@ export function MainLayout() {
                 release: {
                     tag: string
                 }
-            }>('https://ungh.cc/repos/localzet/aura-backend/releases/latest')
+            }>('https://ungh.cc/repos/localzet/aura-frontend/releases/latest')
             return response.data.release.tag
         }
     })
