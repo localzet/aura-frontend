@@ -58,10 +58,7 @@ export const DeleteAllUsersByStatusFeature = (props: IProps) => {
                         id: context.notificationId as string,
                         icon: <IconX size={18} />,
                         title: `${BulkDeleteUsersByStatusCommand.TSQ_url}`,
-                        message:
-                            error instanceof Error
-                                ? error.message
-                                : `Неизвестная ошибка`,
+                        message: error instanceof Error ? error.message : `Неизвестная ошибка`,
                         color: 'red'
                     })
                 }

@@ -63,7 +63,8 @@ function validateAppConfig(app: any, path: string): string[] {
     }
 
     if (typeof app.name !== 'string') errors.push(`${path}.name: должно быть строкой`)
-    if (typeof app.isFeatured !== 'boolean') errors.push(`${path}.isFeatured: должно быть булевым значением`)
+    if (typeof app.isFeatured !== 'boolean')
+        errors.push(`${path}.isFeatured: должно быть булевым значением`)
     if (typeof app.urlScheme !== 'string') errors.push(`${path}.urlScheme: должно быть строкой`)
 
     if (app.isNeedBase64Encoding !== undefined && typeof app.isNeedBase64Encoding !== 'boolean') {
@@ -160,9 +161,12 @@ function validateLocalizedText(text: any, path: string): string[] {
     if (typeof text.fa !== 'string') errors.push(`${path}.fa: должно быть строкой`)
     if (typeof text.ru !== 'string') errors.push(`${path}.ru: должно быть строкой`)
 
-    if (typeof text.en === 'string' && text.en === '') errors.push(`${path}.en: не может быть пустым`)
-    if (typeof text.fa === 'string' && text.fa === '') errors.push(`${path}.fa: не может быть пустым`)
-    if (typeof text.ru === 'string' && text.ru === '') errors.push(`${path}.ru: не может быть пустым`)
+    if (typeof text.en === 'string' && text.en === '')
+        errors.push(`${path}.en: не может быть пустым`)
+    if (typeof text.fa === 'string' && text.fa === '')
+        errors.push(`${path}.fa: не может быть пустым`)
+    if (typeof text.ru === 'string' && text.ru === '')
+        errors.push(`${path}.ru: не может быть пустым`)
 
     return errors
 }

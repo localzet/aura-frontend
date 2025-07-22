@@ -108,7 +108,7 @@ export function MainLayout() {
                             />
                         </Group>
                         <Group style={{ flexShrink: 0 }}>
-                            <HeaderControls/>
+                            <HeaderControls />
                         </Group>
                     </Group>
                 </Container>

@@ -17,8 +17,7 @@ export const useAddInboundToUsers = createMutationHook({
         onError: (error) => {
             notifications.show({
                 title: `Добавление инбаунда пользователям`,
-                message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                message: error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -34,8 +33,7 @@ export const useRemoveInboundFromUsers = createMutationHook({
         onError: (error) => {
             notifications.show({
                 title: `Удаление инбаунда у пользователей`,
-                message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                message: error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -51,8 +49,7 @@ export const useAddInboundToNodes = createMutationHook({
         onError: (error) => {
             notifications.show({
                 title: `Добавление инбаунда нодам`,
-                message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                message: error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
@@ -68,8 +65,7 @@ export const useRemoveInboundFromNodes = createMutationHook({
         onError: (error) => {
             notifications.show({
                 title: `Удаление инбаунда у нод`,
-                message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                message: error instanceof Error ? error.message : `Неизвестная ошибка`,
                 color: 'red'
             })
         }
