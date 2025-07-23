@@ -98,7 +98,7 @@ export const BulkAllUserActionsUpdateTabFeature = (props: IProps) => {
                 </Text>
 
                 <Select
-                    allowDeselect={true}
+                    allowDeselect
                     clearable
                     data={userStatusValues.filter(
                         (status) => status.value !== 'EXPIRED' && status.value !== 'LIMITED'
@@ -136,7 +136,7 @@ export const BulkAllUserActionsUpdateTabFeature = (props: IProps) => {
                 />
 
                 <Select
-                    allowDeselect={true}
+                    allowDeselect
                     clearable
                     data={resetDataStrategy(t)}
                     description={t('create-user-modal.widget.traffic-reset-strategy-description')}

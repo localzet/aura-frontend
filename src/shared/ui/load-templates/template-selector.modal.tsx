@@ -45,7 +45,7 @@ export const TemplateDownloadModal = (props: TemplateSelectorModalProps) => {
     if (isTemplatesLoading || !templatesList) {
         return (
             <Center>
-                <LoadingOverlay visible={true} />
+                <LoadingOverlay visible />
             </Center>
         )
     }

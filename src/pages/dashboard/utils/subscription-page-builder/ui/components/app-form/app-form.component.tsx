@@ -123,7 +123,7 @@ export const AppForm = (props: AppFormProps) => {
                         </Title>
                         <LocalizedFields
                             field="description"
-                            isDescription={true}
+                            isDescription
                             section="installationStep"
                             updateField={handleUpdateLocalizedField}
                             value={localApp.installationStep.description}
@@ -203,7 +203,7 @@ export const AppForm = (props: AppFormProps) => {
                                 </Title>
                                 <LocalizedFields
                                     field="description"
-                                    isDescription={true}
+                                    isDescription
                                     section="additionalBeforeAddSubscriptionStep"
                                     updateField={handleUpdateLocalizedField}
                                     value={localApp.additionalBeforeAddSubscriptionStep.description}
@@ -236,7 +236,7 @@ export const AppForm = (props: AppFormProps) => {
                         </Title>
                         <LocalizedFields
                             field="description"
-                            isDescription={true}
+                            isDescription
                             section="addSubscriptionStep"
                             updateField={handleUpdateLocalizedField}
                             value={localApp.addSubscriptionStep.description}
@@ -306,7 +306,7 @@ export const AppForm = (props: AppFormProps) => {
                                 </Title>
                                 <LocalizedFields
                                     field="description"
-                                    isDescription={true}
+                                    isDescription
                                     section="additionalAfterAddSubscriptionStep"
                                     updateField={handleUpdateLocalizedField}
                                     value={localApp.additionalAfterAddSubscriptionStep.description}
@@ -339,7 +339,7 @@ export const AppForm = (props: AppFormProps) => {
                         </Title>
                         <LocalizedFields
                             field="description"
-                            isDescription={true}
+                            isDescription
                             section="connectAndUseStep"
                             updateField={handleUpdateLocalizedField}
                             value={localApp.connectAndUseStep.description}
