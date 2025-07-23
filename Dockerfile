@@ -5,13 +5,13 @@ COPY package*.json ./
 COPY tsconfig.json ./
 COPY tsconfig.node.json ./
 
-RUN npm install
+RUN npm install --force
 
 COPY . .
 
 RUN npm run start:build
 
-RUN npm cache clean --force 
+RUN npm cache clean --force
 
 RUN npm prune --omit=dev
 
