@@ -19,8 +19,8 @@ export const useGetHosts = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение всех хостов`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение всех хостов",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }

@@ -33,8 +33,8 @@ export const useGetInbounds = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение инбаундов`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение инбаундов",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -55,7 +55,7 @@ export const useGetFullInbounds = createGetQueryHook({
     errorHandler: (error) => {
         notifications.show({
             title: 'Получение полных данных об инбаундах',
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }

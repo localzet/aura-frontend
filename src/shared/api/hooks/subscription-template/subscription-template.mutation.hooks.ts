@@ -18,9 +18,9 @@ export const useUpdateSubscriptionTemplate = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Обновление шаблона подписки`,
+                title: "Обновление шаблона подписки",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }

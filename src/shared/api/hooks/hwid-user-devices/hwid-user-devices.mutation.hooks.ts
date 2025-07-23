@@ -20,7 +20,7 @@ export const useDeleteUserHwidDevice = createMutationHook({
             notifications.show({
                 title: 'Удаление устройства',
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }

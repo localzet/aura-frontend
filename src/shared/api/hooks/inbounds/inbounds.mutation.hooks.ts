@@ -16,9 +16,9 @@ export const useAddInboundToUsers = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Добавление инбаунда пользователям`,
+                title: "Добавление инбаунда пользователям",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -33,9 +33,9 @@ export const useRemoveInboundFromUsers = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Удаление инбаунда у пользователей`,
+                title: "Удаление инбаунда у пользователей",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -50,9 +50,9 @@ export const useAddInboundToNodes = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Добавление инбаунда нодам`,
+                title: "Добавление инбаунда нодам",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -67,9 +67,9 @@ export const useRemoveInboundFromNodes = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: `Удаление инбаунда у нод`,
+                title: "Удаление инбаунда у нод",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }

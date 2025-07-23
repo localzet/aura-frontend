@@ -61,7 +61,7 @@ export const DeleteAllUsersByStatusFeature = (props: IProps) => {
                         message:
                             error instanceof Error
                                 ? error.message
-                                : `Неизвестная ошибка`,
+                                : "Неизвестная ошибка",
                         color: 'red'
                     })
                 }

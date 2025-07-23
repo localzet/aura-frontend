@@ -43,8 +43,8 @@ export const useGetUserByUuid = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение пользователя по UUID`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение пользователя по UUID",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -63,8 +63,8 @@ export const useGetUsersV2 = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение всех пользователей`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение всех пользователей",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -80,8 +80,8 @@ export const useGetSubscriptionInfoByShortUuid = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение информации о подписке по короткому UUID`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение информации о подписке по короткому UUID",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -99,8 +99,8 @@ export const useGetUserUsageByRange = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение статистики использования пользователя за период`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение статистики использования пользователя за период",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -116,8 +116,8 @@ export const useGetUserTags = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение тегов пользователей`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение тегов пользователей",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }

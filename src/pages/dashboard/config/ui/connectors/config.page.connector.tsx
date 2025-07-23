@@ -57,7 +57,7 @@ export function ConfigPageConnector() {
     }, [])
 
     if (isLoading || isConfigLoading || !config) {
-        return <LoadingScreen text={`Загрузка модуля WASM...`} value={downloadProgress} />
+        return <LoadingScreen text={"Загрузка модуля WASM..."} value={downloadProgress} />
     }
 
     return <ConfigPageComponent config={config} />

@@ -22,8 +22,8 @@ export const useGetConfig = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение конфигурации`,
-            message: error instanceof Error ? error.message : `Запрос завершился неизвестной ошибкой.`,
+            title: "Получение конфигурации",
+            message: error instanceof Error ? error.message : "Запрос завершился неизвестной ошибкой.",
             color: 'red'
         })
     }

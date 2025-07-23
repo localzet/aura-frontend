@@ -41,8 +41,8 @@ export const useGetSystemStats = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение статистики системы`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение статистики системы",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -63,8 +63,8 @@ export const useGetBandwidthStats = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение статистики пропускной способности`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение статистики пропускной способности",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }
@@ -85,8 +85,8 @@ export const useGetNodesStatisticsCommand = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение статистики нод`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: "Получение статистики нод",
+            message: error instanceof Error ? error.message : "Неизвестная ошибка",
             color: 'red'
         })
     }

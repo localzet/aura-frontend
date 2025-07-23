@@ -33,9 +33,9 @@ export const useCreateUser = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Создание пользователя`,
+                title: "Создание пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -57,9 +57,9 @@ export const useUpdateUser = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Обновление пользователя`,
+                title: "Обновление пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -81,9 +81,9 @@ export const useDeleteUser = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Удаление пользователя`,
+                title: "Удаление пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -105,9 +105,9 @@ export const useRevokeUserSubscription = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Отзыв подписки пользователя`,
+                title: "Отзыв подписки пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -129,9 +129,9 @@ export const useEnableUser = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Включение пользователя`,
+                title: "Включение пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -153,9 +153,9 @@ export const useDisableUser = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Отключение пользователя`,
+                title: "Отключение пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -177,9 +177,9 @@ export const useResetUserTraffic = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Сброс трафика пользователя`,
+                title: "Сброс трафика пользователя",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -208,9 +208,9 @@ export const useBulkUpdateUsers = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовое обновление пользователей`,
+                title: "Массовое обновление пользователей",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -232,9 +232,9 @@ export const useBulkResetTraffic = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовый сброс трафика`,
+                title: "Массовый сброс трафика",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -256,9 +256,9 @@ export const useBulkRevokeUsersSubscription = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовый отзыв подписок`,
+                title: "Массовый отзыв подписок",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -280,9 +280,9 @@ export const useBulkDeleteUsers = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовое удаление пользователей`,
+                title: "Массовое удаление пользователей",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -304,9 +304,9 @@ export const useBulkSetActiveInbounds = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовое назначение инбаундов`,
+                title: "Массовое назначение инбаундов",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -328,9 +328,9 @@ export const useBulkAllUpdateUsers = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовое обновление всех пользователей`,
+                title: "Массовое обновление всех пользователей",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
@@ -351,9 +351,9 @@ export const useBulkAllResetTrafficUsers = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Массовый сброс трафика для всех пользователей`,
+                title: "Массовый сброс трафика для всех пользователей",
                 message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                    error instanceof Error ? error.message : "Неизвестная ошибка",
                 color: 'red'
             })
         }
