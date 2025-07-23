@@ -1,8 +1,4 @@
-import {
-    CreateHostCommand,
-    GetInboundsCommand,
-    UpdateHostCommand
-} from '@localzet/aura-contract'
+import { CreateHostCommand, GetInboundsCommand, UpdateHostCommand } from '@localzet/aura-contract'
 import { UseFormReturnType } from '@mantine/form'
 
 export interface IProps<T extends CreateHostCommand.Request | UpdateHostCommand.Request> {
