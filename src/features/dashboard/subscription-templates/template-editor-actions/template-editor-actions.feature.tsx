@@ -26,7 +26,7 @@ export function TemplateEditorActionsFeature(props: Props) {
 
         const currentValue = editorRef.current.getValue()
 
-        if (currentValue && currentValue.trim()) {
+        if (currentValue?.trim()) {
             if (language === 'yaml') {
                 updateConfig({
                     variables: {
