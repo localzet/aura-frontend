@@ -80,15 +80,15 @@ export function createGetQueryHook<
     RouteParamsSchema extends z.ZodType,
     ErrorHandler extends (error: unknown) => void = (error: unknown) => void
 >({
-      endpoint,
-      responseSchema,
-      requestQuerySchema,
-      rQueryParams,
-      queryParams,
-      routeParams,
-      errorHandler,
-      getQueryKey
-  }: CreateGetQueryHookArgs<ResponseSchema, RequestQuerySchema, RouteParamsSchema> & {
+    endpoint,
+    responseSchema,
+    requestQuerySchema,
+    rQueryParams,
+    queryParams,
+    routeParams,
+    errorHandler,
+    getQueryKey
+}: CreateGetQueryHookArgs<ResponseSchema, RequestQuerySchema, RouteParamsSchema> & {
     getQueryKey: (
         params: QueryParams<z.infer<RouteParamsSchema>, z.infer<RequestQuerySchema>>
     ) => QueryKey

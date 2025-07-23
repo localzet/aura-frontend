@@ -39,11 +39,11 @@ interface BuildInfoModalProps {
 }
 
 export function BuildInfoModal({
-                                   opened,
-                                   onClose,
-                                   buildInfo,
-                                   isNewVersionAvailable
-                               }: BuildInfoModalProps) {
+    opened,
+    onClose,
+    buildInfo,
+    isNewVersionAvailable
+}: BuildInfoModalProps) {
     const buildDate = new Date(buildInfo.buildTime).toLocaleString()
     const clipboard = useClipboard({ timeout: 1000 })
     const theme = useMantineTheme()
@@ -106,7 +106,9 @@ export function BuildInfoModal({
                                     color="teal"
                                     component="a"
                                     fullWidth={false}
-                                    href={'https://github.com/localzet/aura-backend/releases/latest'}
+                                    href={
+                                        'https://github.com/localzet/aura-backend/releases/latest'
+                                    }
                                     leftSection={<IconBrandGithub size={16} />}
                                     mt="sm"
                                     radius="md"
