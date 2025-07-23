@@ -51,7 +51,7 @@ export const EditNodeModalConnectorWidget = () => {
         }
     })
 
-    const handleClose = (closeModal: boolean = false) => {
+    const handleClose = (closeModal = false) => {
         if (closeModal) {
             actions.toggleEditModal(false)
         }
