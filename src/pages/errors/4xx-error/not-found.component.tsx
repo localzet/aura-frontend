@@ -30,7 +30,8 @@ export function NotFoundPageComponent() {
                 <div className={classes.content}>
                     <Title className={classes.title}>Здесь ничего нет</Title>
                     <Text c="dimmed" className={classes.description} size="lg" ta="center">
-                        Страница, которую вы пытаетесь открыть, не существует. Возможно, вы ошиблись в адресе или страница была перемещена.
+                        Страница, которую вы пытаетесь открыть, не существует. Возможно, вы ошиблись
+                        в адресе или страница была перемещена.
                     </Text>
                     <Group justify="center">
                         <Button onClick={handleGoBack} size="md">
