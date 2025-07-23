@@ -184,7 +184,7 @@ export const ViewUserModal = () => {
         })
     })
 
-    const handleClose = (closeModal: boolean = false) => {
+    const handleClose = (closeModal = false) => {
         if (closeModal) {
             actions.changeModalState(false)
         }
