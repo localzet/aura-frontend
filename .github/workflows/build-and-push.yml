@@ -73,7 +73,6 @@ jobs:
             ghcr.io/localzet/aura-frontend:${{github.ref_name}}
 
   create-release:
-    needs: [ build-docker-image ]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -166,7 +165,7 @@ jobs:
 
   send-success-message:
     name: 📢 Send Telegram message
-    needs: [ build-docker-image, create-release ]
+    needs: [ create-release ]
     runs-on: ubuntu-latest
     steps:
       - name: 🔧 Checkout source code
