@@ -25,7 +25,7 @@ export function MetricCardRingProgress({
     ...props
 }: MetricRingProgressProps) {
     const color = match(
-        [!!baseColor, alpha(baseColor!, 0.1)],
+        [Boolean(baseColor), alpha(baseColor!, 0.1)],
         [sections.length === 1, alpha(sections[0].color, 0.1)],
         [true, alpha('var(--rp-curve-root-color)', 0.6)]
     )

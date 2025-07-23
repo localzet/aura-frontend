@@ -47,7 +47,7 @@ export const EditNodeModalConnectorWidget = () => {
             uuid: node?.uuid ?? ''
         },
         rQueryParams: {
-            enabled: !!node?.uuid
+            enabled: Boolean(node?.uuid)
         }
     })
 

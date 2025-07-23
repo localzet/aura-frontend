@@ -93,7 +93,7 @@ export const ViewUserModal = () => {
         )
     })
 
-    const isQueryEnabled = !!selectedUser && !form.isTouched()
+    const isQueryEnabled = Boolean(selectedUser) && !form.isTouched()
 
     const {
         data: user,
