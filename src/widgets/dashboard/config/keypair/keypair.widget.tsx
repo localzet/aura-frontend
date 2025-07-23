@@ -19,8 +19,8 @@ export const KeypairWidget = () => {
     const generatePublicAndPrivate = () => {
         const keyPair = generateKeyPair()
         setKeyPair({
-            privateKey: encodeURLSafe(keyPair.secretKey).replace(/=/g, '').replace(/\n/g, ''),
-            publicKey: encodeURLSafe(keyPair.publicKey).replace(/=/g, '').replace(/\n/g, '')
+            privateKey: encodeURLSafe(keyPair.secretKey).replace(/[=]/g, '').replace(/\n/g, ''),
+            publicKey: encodeURLSafe(keyPair.publicKey).replace(/[=]/g, '').replace(/\n/g, '')
         })
     }
 
