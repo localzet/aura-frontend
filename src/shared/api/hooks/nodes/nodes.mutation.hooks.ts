@@ -26,9 +26,8 @@ export const useCreateNode = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Создание ноды",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Создание ноды',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -50,9 +49,8 @@ export const useUpdateNode = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Обновление ноды",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Обновление ноды',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -74,9 +72,8 @@ export const useDeleteNode = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Удаление ноды",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Удаление ноды',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -98,9 +95,8 @@ export const useEnableNode = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Включение ноды",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Включение ноды',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -122,9 +118,8 @@ export const useDisableNode = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Отключение ноды",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Отключение ноды',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -145,9 +140,8 @@ export const useRestartAllNodes = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Перезапуск всех нод",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Перезапуск всех нод',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -162,9 +156,8 @@ export const useReorderNodes = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: "Изменение порядка нод",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Изменение порядка нод',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }

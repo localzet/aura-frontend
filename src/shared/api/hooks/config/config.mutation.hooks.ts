@@ -18,9 +18,8 @@ export const useUpdateConfig = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Обновление конфигурации",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Обновление конфигурации',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }

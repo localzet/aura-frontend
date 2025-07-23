@@ -25,7 +25,7 @@ export const useGetSubscriptionTemplate = createGetQueryHook({
     errorHandler: (error) => {
         notifications.show({
             title: 'Получение шаблона подписки',
-            message: error instanceof Error ? error.message : "Неизвестная ошибка",
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }

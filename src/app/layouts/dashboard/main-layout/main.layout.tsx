@@ -42,10 +42,10 @@ export function MainLayout() {
 
     const buildInfo = getBuildInfo()
 
-    const isMobile = useMediaQuery("(max-width: 64rem)", undefined, {
+    const isMobile = useMediaQuery('(max-width: 64rem)', undefined, {
         getInitialValueInEffect: false
     })
-    const isSocialButton = useMediaQuery("(max-width: 40rem)", undefined, {
+    const isSocialButton = useMediaQuery('(max-width: 40rem)', undefined, {
         getInitialValueInEffect: false
     })
 
@@ -108,7 +108,7 @@ export function MainLayout() {
                             />
                         </Group>
                         <Group style={{ flexShrink: 0 }}>
-                            <HeaderControls/>
+                            <HeaderControls />
                         </Group>
                     </Group>
                 </Container>

@@ -20,7 +20,7 @@ export const useGetAuthStatus = createGetQueryHook({
     errorHandler: (error) => {
         notifications.show({
             title: 'Ошибка аутентификации',
-            message: error instanceof Error ? error.message : "Неизвестная ошибка",
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }

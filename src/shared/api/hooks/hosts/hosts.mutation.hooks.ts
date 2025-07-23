@@ -28,9 +28,8 @@ export const useCreateHost = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Создание хоста",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Создание хоста',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -52,9 +51,8 @@ export const useUpdateHost = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Обновление хоста",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Обновление хоста',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -76,9 +74,8 @@ export const useDeleteHost = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Удаление хоста",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Удаление хоста',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -93,9 +90,8 @@ export const useReorderHosts = createMutationHook({
     rMutationParams: {
         onError: (error) => {
             notifications.show({
-                title: "Изменение порядка хостов",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Изменение порядка хостов',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -117,9 +113,8 @@ export const useBulkDeleteHosts = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Массовое удаление хостов",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Массовое удаление хостов',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -141,9 +136,8 @@ export const useBulkEnableHosts = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Массовое включение хостов",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Массовое включение хостов',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -165,9 +159,8 @@ export const useBulkDisableHosts = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Массовое отключение хостов",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Массовое отключение хостов',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -189,9 +182,8 @@ export const useSetInboundHosts = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Установка инбаунда для нескольких хостов",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Установка инбаунда для нескольких хостов',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -213,9 +205,8 @@ export const useSetPortToManyHosts = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: "Установка порта для нескольких хостов",
-                message:
-                    error instanceof Error ? error.message : "Неизвестная ошибка",
+                title: 'Установка порта для нескольких хостов',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
