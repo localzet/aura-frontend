@@ -21,8 +21,8 @@ export const useGetApiTokens = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение всех API-токенов`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение всех API-токенов',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }

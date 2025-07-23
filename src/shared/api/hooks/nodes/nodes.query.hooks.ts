@@ -47,8 +47,8 @@ export const useGetNodes = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение всех нод`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение всех нод',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }
@@ -66,8 +66,8 @@ export const useGetNode = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение ноды`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение ноды',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }
@@ -85,8 +85,8 @@ export const useGetPubKey = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение публичного ключа`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение публичного ключа',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }
@@ -102,8 +102,8 @@ export const useGetNodesUsageByRangeCommand = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение статистики использования нод по периоду`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение статистики использования нод по периоду',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }
@@ -121,8 +121,8 @@ export const useGetNodeUsersUsageByRange = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение статистики пользователей ноды по периоду`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение статистики пользователей ноды по периоду',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }
@@ -138,8 +138,8 @@ export const useGetNodesRealtimeUsage = createGetQueryHook({
     },
     errorHandler: (error) => {
         notifications.show({
-            title: `Получение реального времени использования нод`,
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            title: 'Получение реального времени использования нод',
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }

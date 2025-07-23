@@ -23,7 +23,7 @@ export const useGetUserHwidDevices = createGetQueryHook({
     errorHandler: (error) => {
         notifications.show({
             title: 'Получение HWID и устройств пользователя',
-            message: error instanceof Error ? error.message : `Неизвестная ошибка`,
+            message: error instanceof Error ? error.message : 'Неизвестная ошибка',
             color: 'red'
         })
     }

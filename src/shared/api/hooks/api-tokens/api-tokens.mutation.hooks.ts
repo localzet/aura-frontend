@@ -18,9 +18,8 @@ export const useCreateApiToken = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Создание API-токена`,
-                message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                title: 'Создание API-токена',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
@@ -42,9 +41,8 @@ export const useDeleteApiToken = createMutationHook({
         },
         onError: (error) => {
             notifications.show({
-                title: `Удаление API-токена`,
-                message:
-                    error instanceof Error ? error.message : `Неизвестная ошибка`,
+                title: 'Удаление API-токена',
+                message: error instanceof Error ? error.message : 'Неизвестная ошибка',
                 color: 'red'
             })
         }
