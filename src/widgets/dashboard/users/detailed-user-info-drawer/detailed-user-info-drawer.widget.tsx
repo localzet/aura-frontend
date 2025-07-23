@@ -45,7 +45,7 @@ export const DetailedUserInfoDrawerWidget = () => {
         actions.changeDetailedUserInfoDrawerState(false)
     }
 
-    const isQueryEnabled = !!selectedUser
+    const isQueryEnabled = Boolean(selectedUser)
 
     const { data: user, isLoading: isUserLoading } = useGetUserByUuid({
         route: {

@@ -102,7 +102,7 @@ export const AppForm = (props: AppFormProps) => {
                     />
 
                     <Checkbox
-                        checked={!!localApp.isNeedBase64Encoding}
+                        checked={Boolean(localApp.isNeedBase64Encoding)}
                         label={t('app-form.component.need-base64-encoding')}
                         onChange={(e) => updateApp({ isNeedBase64Encoding: e.target.checked })}
                     />
