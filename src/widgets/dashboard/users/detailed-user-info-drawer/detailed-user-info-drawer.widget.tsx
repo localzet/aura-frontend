@@ -63,7 +63,7 @@ export const DetailedUserInfoDrawerWidget = () => {
 
     return (
         <Drawer
-            keepMounted={true}
+            keepMounted
             onClose={cleanUpDrawer}
             opened={isDetailedUserInfoDrawerOpen}
             overlayProps={{ backgroundOpacity: 0.6, blur: 0 }}

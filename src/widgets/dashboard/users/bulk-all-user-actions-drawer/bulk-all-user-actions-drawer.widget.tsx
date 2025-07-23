@@ -28,7 +28,7 @@ export const BulkAllUserActionsDrawerWidget = (props: IBulkAllDrawerProps) => {
 
     return (
         <Drawer
-            keepMounted={true}
+            keepMounted
             onClose={cleanUpDrawer}
             opened={isDrawerOpen}
             overlayProps={{ backgroundOpacity: 0.6, blur: 0 }}
