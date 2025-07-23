@@ -151,7 +151,7 @@ jobs:
           draft: false
           prerelease: false
           body: |
-            # 🌊 Aura Frontend v${{ github.ref_name }}
+            # 🌊 Aura Frontend ${{ github.ref_name }}
             
             📝 Compare changes: ${{ env.CHANGELOG }}
             
